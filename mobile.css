@@ -1,0 +1,10 @@
+@media (min-width: 300px) and (max-width: 500px){
+    .index-container{
+        font-size: 1.8rem;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 
+            /* 1st row */
+            ". . . . . . ."
+        ;
+    }
+}

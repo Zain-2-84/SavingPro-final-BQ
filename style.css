@@ -16,32 +16,32 @@ a {
 .index-container{
     font-size: 2.5rem;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(8, minmax(5rem, 1fr));
     grid-template-areas: 
         /* 1st row */
-        "navbar navbar navbar navbar navbar navbar navbar navbar"
+        "navbar navbar navbar navbar navbar navbar navbar"
 
         /* 2nd row */
-        ". . . . . . . ."
+        ". . . . . . ."
 
         /* 3rd row */
-        ". . . . . . . ."
+        ". . . . . . ."
 
         /* 4th row */
-        ". . . . . . . ."
+        ". . . . . . ."
 
         /* 5th row */
-        ". . . . . . . ."
+        ". . . . . . ."
 
         /* 6th row */
-        ". . . . . . . ."
+        ". . . . . . ."
 
         /* 7th row */
-        ". . . . . . . ."
+        ". . . . . . ."
 
         /* 8th row */
-        ". . . . . . . ."
+        ". . . . . . ."
     ;
 }
 
@@ -49,11 +49,11 @@ a {
 .navbar{
     grid-area: navbar;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: 
         /* 1st row */
-        "navbar-company-name . navbar-about navbar-services navbar-contact navbar-legal navbar-login"
+        "navbar-company-name navbar-company-name . navbar-apply-for-loan navbar-about navbar-services navbar-contact navbar-login"
     ;
     align-items: center;
 }
@@ -68,6 +68,13 @@ a {
     justify-self: center;
 }
 /* navbar-company-name end */
+
+/* navbar-apply-for-loan start */
+.navbar-apply-for-loan{
+    grid-area: navbar-apply-for-loan;
+    justify-self: center;
+}
+/* navbar-apply-for-loan end */
 
 /* navbar-about start*/
 .navbar-about{
