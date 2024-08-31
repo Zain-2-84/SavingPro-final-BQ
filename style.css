@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.index-container{
+    font-size: 2.5rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, minmax(5rem, 1fr));
+    grid-template-areas: 
+        /* 1st row */
+        "navbar navbar navbar navbar navbar navbar navbar"
+
+        /* 2nd row */
+        ". . . . . . ."
+
+        /* 3rd row */
+        ". . . . . . ."
+
+        /* 4th row */
+        ". . . . . . ."
+
+        /* 5th row */
+        ". . . . . . ."
+
+        /* 6th row */
+        ". . . . . . ."
+
+        /* 7th row */
+        ". . . . . . ."
+
+        /* 8th row */
+        ". . . . . . ."
+    ;
+}
+
+/* navbar start */
+.navbar{
+    grid-area: navbar;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+        /* 1st row */
+        "navbar-company-logo navbar-company-logo . navbar-apply-for-loan navbar-about navbar-services navbar-contact navbar-login"
+    ;
+    align-items: center;
+}
+
+.fa-piggy-bank{
+    color: black;
+}
+
+/* navbar-company-name start */
+.navbar-company-name{
+    grid-area: navbar-company-name;
+    justify-self: center;
+}
+/* navbar-company-name end */
+
+/* navbar-apply-for-loan start */
+.navbar-apply-for-loan{
+    grid-area: navbar-apply-for-loan;
+    justify-self: center;
+    text-align: center;
+    background-color: #10c98f;
+    border-radius: 2rem;
+    padding: 6%;
+}
+
+.navbar-apply-for-loan a{
+    color: white;
+}
+
+.navbar-about a, .navbar-services a, .navbar-contact a, .navbar-login a{
+    color: black;
+}
+/* navbar-apply-for-loan end */
+
+/* navbar-about start*/
+.navbar-about{
+    grid-area: navbar-about;
+    justify-self: center;
+}
+
+/* navbar-about end*/
+
+/* navbar-services start */
+.navbar-services{
+    grid-area: navbar-services;
+    justify-self: center;
+}
+
+/* navbar-services end */
+
+/* navbar-contact start */
+.navbar-contact{
+    grid-area: navbar-contact;
+    justify-self: center;
+}
+
+/* navbar-contact end */
+
+/* navbar-login start */
+.navbar-login{
+    grid-area: navbar-login;
+    justify-self: center;
+}
+
+/* navbar-login end */
+
+/* navbar end */

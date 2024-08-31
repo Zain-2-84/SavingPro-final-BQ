@@ -1,0 +1,10 @@
+@media (min-width: 300px) and (max-width: 500px){
+    .navbar{
+        font-size: 1.5rem;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            /* 1st row */
+            "navbar-company-logo navbar-apply-for-loan navbar-about navbar-services navbar-contact navbar-login"
+        ;
+    }
+}
