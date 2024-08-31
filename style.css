@@ -53,7 +53,7 @@ a {
     grid-template-rows: repeat(1, 1fr);
     grid-template-areas: 
         /* 1st row */
-        "navbar-company-name navbar-company-name . navbar-apply-for-loan navbar-about navbar-services navbar-contact navbar-login"
+        "navbar-company-logo navbar-company-logo . navbar-apply-for-loan navbar-about navbar-services navbar-contact navbar-login"
     ;
     align-items: center;
 }
@@ -73,6 +73,18 @@ a {
 .navbar-apply-for-loan{
     grid-area: navbar-apply-for-loan;
     justify-self: center;
+    text-align: center;
+    background-color: #10c98f;
+    border-radius: 2rem;
+    padding: 6%;
+}
+
+.navbar-apply-for-loan a{
+    color: white;
+}
+
+.navbar-about a, .navbar-services a, .navbar-contact a, .navbar-login a{
+    color: black;
 }
 /* navbar-apply-for-loan end */
 
@@ -81,6 +93,7 @@ a {
     grid-area: navbar-about;
     justify-self: center;
 }
+
 /* navbar-about end*/
 
 /* navbar-services start */
@@ -88,6 +101,7 @@ a {
     grid-area: navbar-services;
     justify-self: center;
 }
+
 /* navbar-services end */
 
 /* navbar-contact start */
@@ -95,20 +109,15 @@ a {
     grid-area: navbar-contact;
     justify-self: center;
 }
-/* navbar-contact end */
 
-/* navbar-legal start */
-.navbar-legal{
-    grid-area: navbar-legal;
-    justify-self: center;
-}
-/* navbar-legal end */
+/* navbar-contact end */
 
 /* navbar-login start */
 .navbar-login{
     grid-area: navbar-login;
     justify-self: center;
 }
+
 /* navbar-login end */
 
 /* navbar end */
