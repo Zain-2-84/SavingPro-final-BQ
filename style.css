@@ -16,11 +16,32 @@ a {
 .index-container{
     font-size: 2.5rem;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(8, minmax(5rem, 1fr));
+    grid-template-columns: repeat(8, minmax(5rem, 1fr));
+    grid-template-rows: repeat(8, 1fr);
     grid-template-areas: 
         /* 1st row */
-        "navbar navbar navbar navbar navbar navbar navbar"
+        "navbar navbar navbar navbar navbar navbar navbar navbar"
+        
+        /* 2nd row */
+        "intro-section intro-section intro-section intro-section intro-section intro-section intro-section intro-section"
+        
+        /* 3rd row */
+        "intro-section intro-section intro-section intro-section intro-section intro-section intro-section intro-section"
+        
+        /* 4th row */
+        "intro-section intro-section intro-section intro-section intro-section intro-section intro-section intro-section"
+        
+        /* 5th row */
+        "intro-section intro-section intro-section intro-section intro-section intro-section intro-section intro-section"
+        
+        /* 6th row */
+        "intro-section intro-section intro-section intro-section intro-section intro-section intro-section intro-section"
+        
+        /* 7th row */
+        "intro-section intro-section intro-section intro-section intro-section intro-section intro-section intro-section"
+        
+        /*8th row */
+        "intro-section intro-section intro-section intro-section intro-section intro-section intro-section intro-section"
     ;
 }
 
@@ -29,16 +50,16 @@ a {
     grid-area: navbar;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
         /* 1st row */
         "navbar-company-logo navbar-company-logo . navbar-apply-for-loan navbar-about navbar-services navbar-contact navbar-login"
+        
+        /* 2nd row */
+        ". . . . . . . ."
+        
     ;
     align-items: center;
-}
-
-.fa-piggy-bank{
-    color: black;
 }
 
 /* navbar-company-name start */
@@ -100,3 +121,76 @@ a {
 /* navbar-login end */
 
 /* navbar end */
+
+/* intro-section start */
+.intro-section{
+  grid-area: intro-section;
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+      /* 1st row */
+      "intro-content intro-loan-instant"
+      
+      /* 2nd row */
+      "intro-content intro-loan-instant"
+      
+      /* 3rd row */
+      "intro-content intro-loan-instant"
+      
+      /* 4th row */
+      "intro-content intro-loan-instant"
+      
+      /* 5th row */
+      "intro-content intro-loan-instant"
+      
+      /* 6th row */
+      "intro-content intro-loan-instant"
+      
+      /* 7th row */
+      "intro-content intro-loan-instant"
+      
+      /* 8th row */
+      "intro-content intro-loan-instant"
+      
+      /* 9th row */
+      "intro-content intro-loan-instant"
+  ;
+  padding: 0 5rem;
+}
+
+/* intro-content start */
+.intro-content{
+  grid-area: intro-content;
+  justify-content: center;
+}
+
+.intro-content-learn{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+       /* 1st row */
+       ". learn-more-button ."
+  ;
+}
+
+.learn-more-button{
+  grid-area: learn-more-button;
+}
+
+/* intro-content end */
+
+/* intro-loan-instant start */
+.intro-loan-instant{
+  grid-area: intro-loan-instant;
+  padding: 1rem 4rem;
+}
+
+.intro-form{
+  background-color: burlywood;
+}
+/* intro-loan-instant end */
+
+/* intro-content end */
+
+/* intro-section end */
