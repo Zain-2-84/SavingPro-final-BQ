@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Savingpro</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation bar can go here -->
+    </header>
+    
+    <main>
+        <section class="services py-5">
+            <div class="container">
+                <h1 class="text-center mb-4">Our Services</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <h3>Service 1</h3>
+                            <p>Flexible Repayment Options: We offer repayment options tailored to your needs.
+                                Low Interest Rates: Our interest rates are among the lowest in the market.
+                                Quick Approval: Your loan gets approved quickly so you can meet your needs promptly.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <h3>Service 2</h3>
+                            <p>Customized Loan Plans: Every business has unique needs, so we provide customized loan plans.
+                                Fast Processing: Our fast processing helps your business grow quickly.
+                                Expert Guidance: Our experts guide you at every step.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-card">
+                            <h3>Service 3</h3>
+                            <p>Affordable EMIs: We offer affordable EMIs to help you buy your dream home easily.
+                                Transparent Process: Our process is completely transparent with no hidden charges.
+                                Dedicated Support: Our support team is always ready to assist you.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content can go here -->
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
