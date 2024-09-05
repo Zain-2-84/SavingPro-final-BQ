@@ -7,4 +7,12 @@
             "navbar-company-logo . navbar-apply-for-loan navbar-about navbar-services navbar-contact navbar-login"
         ;
     }
+
+    .intro-section{
+        /* default font-size = 2rem */
+        font-size: 1.5rem;
+
+        /* default padding: 0 5rem; */
+        padding: 0 1.5rem;
+    }
 }

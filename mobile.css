@@ -7,4 +7,65 @@
             "navbar-company-logo navbar-apply-for-loan navbar-about navbar-services navbar-contact navbar-login"
         ;
     }
+
+    /* intro-section start */
+    .intro-section{
+        background-image: url(./images/intro-section-images/intro-section-mobile-coins.jpg);
+        padding: 0.5rem;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas: 
+        /* 1st row */
+        "intro-content intro-content"
+
+        /* 2nd row */
+        "intro-content intro-content"
+
+        /* 3rd row */
+        "intro-content intro-content"
+
+        /* 4th row */
+        "intro-content intro-content"
+
+        /* 5th row */
+        "intro-content intro-content"
+
+        /* 6th row */
+        "intro-loan-instant intro-loan-instant"
+        
+        /* 7th row */
+        "intro-loan-instant intro-loan-instant"
+
+        /* 8th row */
+        "intro-loan-instant intro-loan-instant"
+
+        /* 9th row */
+        "intro-loan-instant intro-loan-instant"
+
+        /* 10th row */
+        "intro-loan-instant intro-loan-instant"
+        ;
+    }
+
+    /* intro-content-learn start */
+    .intro-content-learn{
+        grid-template-rows: 0.2fr 1fr 0.2fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            /* 1st row */
+            ". . ."
+
+            /* 2nd row */
+            "learn-more-button learn-more-button learn-more-button"
+
+            /* 3rd row */
+            ". . ."
+        ;
+    }
+    /* intro-content-learn end */
+
+    /* intro-section end */
+    
 }
