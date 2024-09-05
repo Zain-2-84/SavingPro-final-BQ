@@ -17,7 +17,7 @@ a {
   font-size: 2rem;
   display: grid;
   grid-template-columns: repeat(8, minmax(3rem, 1fr));
-  grid-template-rows: auto 1fr auto auto auto auto auto auto;
+  grid-template-rows: auto 1fr repeat(6, auto);
   grid-template-areas: 
         /* 1st row */
     "navbar navbar navbar navbar navbar navbar navbar navbar"
