@@ -1,117 +1,109 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: 400;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.index-container{
-    font-size: 2rem;
-    display: grid;
-    grid-template-columns: repeat(8, minmax(3rem, 1fr));
-    grid-template-rows: auto 1fr auto auto auto auto auto auto;
-    grid-template-areas: 
+.index-container {
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(8, minmax(3rem, 1fr));
+  grid-template-rows: auto 1fr auto auto auto auto auto auto;
+  grid-template-areas: 
         /* 1st row */
-        "navbar navbar navbar navbar navbar navbar navbar navbar"
-        
-        /* 2nd row */
-        ". . . . . . . ."
-        
-        /* 3rd row */
-        "intro-section intro-section intro-section intro-section intro-section intro-section intro-section intro-section"
-        
-        /* 4th row */
-        "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options"
-        
-        /* 5th row */
-        "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options"
-        
-        /* 6th row */
-        "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options"
-        
-        /* 7th row */
-        "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options"
-        
-        /*8th row */
-        "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options"
-    ;
+    "navbar navbar navbar navbar navbar navbar navbar navbar"
+    /* 2nd row */
+    ". . . . . . . ."
+    /* 3rd row */
+    "intro-section intro-section intro-section intro-section intro-section intro-section intro-section intro-section"
+    /* 4th row */
+    "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options"
+    /* 5th row */
+    "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options"
+    /* 6th row */
+    "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options"
+    /* 7th row */
+    "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options"
+    /*8th row */
+    "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options";
 }
 
 /* navbar start */
-.navbar{
-    grid-area: navbar;
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-areas: 
-        /* 1st row */
-        "navbar-company-logo navbar-company-logo . navbar-apply-for-loan navbar-about navbar-services navbar-contact navbar-login"
-        
-    ;
-    align-items: center;
+.navbar {
+  grid-area: navbar;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-areas: 
+        /* 1st row */ "navbar-company-logo navbar-company-logo . navbar-apply-for-loan navbar-about navbar-services navbar-contact navbar-login";
+  align-items: center;
 }
 
 /* navbar-company-name start */
-.navbar-company-name{
-    grid-area: navbar-company-name;
-    justify-self: center;
+.navbar-company-name {
+  grid-area: navbar-company-name;
+  justify-self: center;
 }
 /* navbar-company-name end */
 
 /* navbar-apply-for-loan start */
-.navbar-apply-for-loan{
-    grid-area: navbar-apply-for-loan;
-    justify-self: center;
-    text-align: center;
-    background-color: #10c98f;
-    border-radius: 2rem;
-    padding: 6%;
+.navbar-apply-for-loan {
+  grid-area: navbar-apply-for-loan;
+  justify-self: center;
+  text-align: center;
+  background-color: #10c98f;
+  border-radius: 2rem;
+  padding: 6%;
 }
 
-.navbar-apply-for-loan a{
-    color: white;
+.navbar-apply-for-loan a {
+  color: white;
 }
 
-.navbar-about a, .navbar-services a, .navbar-contact a, .navbar-login a{
-    color: black;
+.navbar-about a,
+.navbar-services a,
+.navbar-contact a,
+.navbar-login a {
+  color: black;
 }
 /* navbar-apply-for-loan end */
 
 /* navbar-about start*/
-.navbar-about{
-    grid-area: navbar-about;
-    justify-self: center;
+.navbar-about {
+  grid-area: navbar-about;
+  justify-self: center;
 }
 
 /* navbar-about end*/
 
 /* navbar-services start */
-.navbar-services{
-    grid-area: navbar-services;
-    justify-self: center;
+.navbar-services {
+  grid-area: navbar-services;
+  justify-self: center;
 }
 
 /* navbar-services end */
 
 /* navbar-contact start */
-.navbar-contact{
-    grid-area: navbar-contact;
-    justify-self: center;
+.navbar-contact {
+  grid-area: navbar-contact;
+  justify-self: center;
 }
 
 /* navbar-contact end */
 
 /* navbar-login start */
-.navbar-login{
-    grid-area: navbar-login;
-    justify-self: center;
+.navbar-login {
+  grid-area: navbar-login;
+  justify-self: center;
 }
 
 /* navbar-login end */
@@ -119,24 +111,23 @@ a {
 /* navbar end */
 
 /* intro-section start */
-.intro-section{
+.intro-section {
   grid-area: intro-section;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-areas: 
-      /* 1st row */
-      "intro-content intro-loan-instant"
-  ;
+      /* 1st row */ "intro-content intro-loan-instant";
   padding: 0 5rem;
 
   background-image: url(./images/intro-section-images/1-indian-child-doing-finance.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* intro-content start */
-.intro-content{
+.intro-content {
+  color: white;
   grid-area: intro-content;
   justify-content: center;
   display: grid;
@@ -144,54 +135,47 @@ a {
   grid-template-areas: 
     /* 1st row */
     "."
-
     /* 2nd row */
     "intro-content-heading"
-
     /* 3rd row */
     "intro-content-paragraph"
-
     /* 4th row */
     "intro-content-learn"
-
     /* 5th row */
-    "."
-  ;
+    ".";
 }
 
-.intro-content-heading{
-    grid-area: intro-content-heading;
+.intro-content-heading {
+  grid-area: intro-content-heading;
 }
 
-.intro-content-paragraph{
-    grid-area: intro-content-paragraph;
+.intro-content-paragraph {
+  grid-area: intro-content-paragraph;
 }
 
-.intro-content-learn{
+.intro-content-learn {
     grid-area: intro-content-learn;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 
-       /* 1st row */
-       ". learn-more-button ."
-  ;
-}
-
-.learn-more-button{
-  grid-area: learn-more-button;
-}
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+         /* 1st row */ 
+         ". learn-more-button .";
+  }
+  
+  .learn-more-button {
+    grid-area: learn-more-button;
+  }
 /* intro-content end */
 
 /* intro-loan-instant start */
-.intro-loan-instant{
+.intro-loan-instant {
   grid-area: intro-loan-instant;
   padding: 1rem 2rem;
   align-self: center;
 }
 
-.intro-form{
-  background-color: burlywood;
+.intro-form {
+  background-color: white;
   display: grid;
   grid-template-columns: 0.1fr 1fr 0.1fr;
   /* originally 8 rows, now 12 */
@@ -199,72 +183,60 @@ a {
   grid-template-areas: 
     /* 1st row */
     ". . ."
-
     /* 2nd row */
     ". intro-form-heading ."
-    
     /* 3rd row */
     ". intro-form-paragraph ."
-
     /* 4th row */
     ". intro-form-enter-amount-paragraph ."
-
     /* 5th row */
     ". intro-form-enter-amount-input ."
-
     /* 6th row */
     ". . ."
-
     /* 7th row */
     ". intro-form-enter-due-date-paragraph ."
-
     /* 8th row */
     ". enter-due-date ."
-
     /* 9th row */
     ". . ."
-
     /* 10th row */
     ". you-have-to-pay-paragraph ."
-
     /* 11th row */
     ". you-have-to-pay-button ."
-
     /* 12th row */
-    ". . ."
-  ;
+    ". . .";
 }
 
-.intro-form-heading{
-    grid-area: intro-form-heading;
+.intro-form-heading {
+  grid-area: intro-form-heading;
 }
 
-.intro-form-paragraph{
-    grid-area: intro-form-paragraph;
+.intro-form-paragraph {
+  grid-area: intro-form-paragraph;
 }
 
-.intro-form-enter-amount-paragraph{
-    grid-area: intro-form-enter-amount-paragraph;
+.intro-form-enter-amount-paragraph {
+  grid-area: intro-form-enter-amount-paragraph;
 }
 
-.intro-form-enter-amount-input{
-    grid-area: intro-form-enter-amount-input;
+.intro-form-enter-amount-input {
+  grid-area: intro-form-enter-amount-input;
 }
 
-.intro-form-enter-due-date-paragraph{
-    grid-area: intro-form-enter-due-date-paragraph;
+.intro-form-enter-due-date-paragraph {
+  grid-area: intro-form-enter-due-date-paragraph;
 }
 
-.enter-due-date{
-    grid-area: enter-due-date;
+.enter-due-date {
+  grid-area: enter-due-date;
 }
 
-.you-have-to-pay-paragraph{
-    grid-area: you-have-to-pay-paragraph;
+.you-have-to-pay-paragraph {
+  grid-area: you-have-to-pay-paragraph;
 }
 
-.you-have-to-pay-button{
-    grid-area: you-have-to-pay-button;
+.you-have-to-pay-button {
+  grid-area: you-have-to-pay-button;
 }
 /* intro-loan-instant end */
 
