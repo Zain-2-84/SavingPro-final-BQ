@@ -242,4 +242,9 @@ a {
 
 /* intro-content end */
 
+/* loan-options start */
+.loan-options{
+  grid-area: loan-options;
+}
+/* loan-options end */
 /* intro-section end */
