@@ -158,10 +158,17 @@ a {
 .intro-content-learn {
     grid-area: intro-content-learn;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 1fr 0,5fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
-         /* 1st row */ 
-         ". learn-more-button .";
+         /* 1st row */
+         ". . . . ."
+
+         /* 2nd row */
+         ". learn-more-button learn-more-button learn-more-button ."
+
+         /* 3rd row */
+         ". . . . ."
   }
   
   .learn-more-button {
@@ -254,13 +261,16 @@ a {
 /* loan-options start */
 .loan-options{
   display: grid;
-  grid-template-rows: 0.5fr 1fr;
+  grid-template-rows: 0.3fr 0.5fr 1fr;
   grid-template-columns: 1fr;
   grid-template-areas: 
     /* 1st row */
-    "loan-options-content"
+    "."
 
     /* 2nd row */
+    "loan-options-content"
+
+    /* 3rd row */
     "loan-choice-container"
   ;
 
@@ -289,10 +299,6 @@ a {
 
 .loan-options-heading{
   grid-area: loan-options-heading;
-}
-
-.loan-options-hr{
-  grid-area: loan-options-hr;
 }
 
 .loan-options-paragraph{
