@@ -107,6 +107,20 @@
     }
     /* loan-choice-container end */
 
+    /* loan-choice-1 till 3 start */
+    .loan-choice-1{
+        grid-template-rows: repeat(2, 0.3fr) 0.4fr 1fr;
+    }
+
+    .loan-choice-2{
+        grid-template-rows: repeat(2, 0.3fr) 0.2fr 1fr;
+    }
+
+    .loan-choice-3{
+        grid-template-rows: repeat(2, 0.3fr) 0.7fr 1fr;
+    }
+    /* loan-choice-1 till 3 end */
+
     /* loan-options end */
     
 }
