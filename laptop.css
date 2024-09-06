@@ -1,0 +1,38 @@
+@media (min-width: 769px) and (max-width: 1024px){
+    /* intro-section start */
+    .intro-section{
+        font-size: 1.7rem;
+    }
+
+    .intro-content-learn{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 0.4fr 1fr 0.4fr;
+        grid-template-areas: 
+            /* 1st row */
+            ". . . . ."
+
+            /* 2nd row */
+            ". learn-more-button learn-more-button learn-more-button ."
+
+            /* 3rd row */
+            ". . . . ."
+        ;
+    }
+    /* intro-section end */
+
+    /* loan-options start */
+    .loan-options{
+        grid-template-rows: repeat(2, 0.3fr) 1fr;
+        grid-template-areas: 
+            /* 1st row */
+            "."
+
+            /* 2nd row */
+            "loan-options-content"
+
+            /* 3rd row */
+            "loan-choice-container"
+        ;
+    }
+    /* loan-options end */
+}
