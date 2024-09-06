@@ -8,11 +8,56 @@
         ;
     }
 
-    .intro-section{
+    /* page font-size start */
+    .intro-section, .loan-options{
         /* default font-size = 2rem */
-        font-size: 1.5rem;
+        font-size: 1.6rem;
+    }
+    /* page font-size end */
 
+    /* intro-section start */
+    .intro-section{
         /* default padding: 0 5rem; */
         padding: 0 1.5rem;
     }
+
+    .intro-content-learn{
+        grid-template-rows: 0.3fr 1fr 0.3fr;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+            /* 1st row */
+            ". . . . ."
+
+            /* 2nd row */
+            ". learn-more-button learn-more-button learn-more-button ."
+
+            /* 3rd row */
+            ". . . . ."
+        ;
+    }
+
+    /* intro-section end */
+
+    /* loan-options start */
+    .loan-options{
+        grid-template-rows: repeat(2, 0.3fr) 1fr;
+        grid-template-areas: 
+            /* 1st row */
+            "."
+
+            /* 2nd row */
+            "loan-options-content"
+
+            /* 3rd row */
+            "loan-choice-container"
+        ;
+    }
+    /* loan-options end */
+
+    /* loan-choice-1 till 3 start */
+    .loan-choice-1, .loan-choice-2, .loan-choice-3{
+        grid-template-rows: repeat(2, 0.3fr) 0.6fr 1fr;
+        font-size: 1.5rem;
+    }
+    /* lon-choice-1 till 3 end */
 }

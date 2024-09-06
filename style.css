@@ -45,6 +45,8 @@ a {
   grid-template-areas: 
         /* 1st row */ "navbar-company-logo navbar-company-logo . navbar-apply-for-loan navbar-about navbar-services navbar-contact navbar-login";
   align-items: center;
+  /* background-color: #d8f3dc; */
+  background-color: #f0fff1;
 }
 
 /* navbar-company-name start */
@@ -59,7 +61,7 @@ a {
   grid-area: navbar-apply-for-loan;
   justify-self: center;
   text-align: center;
-  background-color: #10c98f;
+  background-color: #52b788;
   border-radius: 2rem;
   padding: 6%;
 }
@@ -156,10 +158,17 @@ a {
 .intro-content-learn {
     grid-area: intro-content-learn;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 1fr 0,5fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas: 
-         /* 1st row */ 
-         ". learn-more-button .";
+         /* 1st row */
+         ". . . . ."
+
+         /* 2nd row */
+         ". learn-more-button learn-more-button learn-more-button ."
+
+         /* 3rd row */
+         ". . . . ."
   }
   
   .learn-more-button {
@@ -248,3 +257,193 @@ a {
 }
 /* loan-options end */
 /* intro-section end */
+
+/* loan-options start */
+.loan-options{
+  display: grid;
+  grid-template-rows: 0.3fr 0.5fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    /* 1st row */
+    "."
+
+    /* 2nd row */
+    "loan-options-content"
+
+    /* 3rd row */
+    "loan-choice-container"
+  ;
+
+  /* justify-content: center; */
+  text-align: center;
+}
+
+/* loan-options-content start */
+.loan-options-content{
+  grid-area: loan-options-content;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 0.2fr;
+  grid-template-rows: repeat(3, 0.2fr);
+  grid-template-areas: 
+    /* 1st row */
+    ". . ."
+
+    /* 2nd row */
+    ". loan-options-heading ."
+    
+    /* 3rd row */
+    ". loan-options-paragraph ."
+    
+  ;
+}
+
+.loan-options-heading{
+  grid-area: loan-options-heading;
+}
+
+.loan-options-paragraph{
+  grid-area: loan-options-paragraph;
+}
+
+/* loan-options-content end */
+
+/* loan-choice-container start */
+.loan-choice-container{
+  grid-area: loan-choice-container;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+    /* 1st row */
+    "loan-choice-1 loan-choice-2 loan-choice-3"
+  ;
+
+  gap: 3rem;
+  margin: 1rem;
+}
+
+/* loan-choice-1 start */
+.loan-choice-1{
+  grid-area: loan-choice-1;
+  display: grid;
+  grid-template-rows: repeat(2, 0.4fr) repeat(2, 1fr);
+  grid-template-areas: 
+    /* 1st row */
+    "loan-choice-1-icon"
+
+    /* 2nd row */
+    "loan-choice-1-icon-text"
+
+    /* 3rd row */
+    "loan-choice-1-heading"
+
+    /* 4th row */
+    "loan-choice-1-paragraph"
+  ;
+}
+
+.loan-choice-1-icon{
+  grid-area: loan-choice-1-icon;
+}
+
+.loan-choice-1-icon-text{
+  grid-area: loan-choice-1-icon-text;
+}
+
+.loan-choice-1-heading{
+  grid-area: loan-choice-1-heading;
+}
+
+.loan-choice-1-paragraph{
+  grid-area: loan-choice-1-paragraph;
+}
+/* loan-choice-1 end */
+
+/* loan-choice-2 start */
+.loan-choice-2{
+  grid-area: loan-choice-2;
+  display: grid;
+  grid-template-rows: repeat(2, 0.4fr) repeat(2, 1fr);
+  grid-template-areas: 
+    /* 1st row */
+    "loan-choice-2-icon"
+
+    /* 2nd row */
+    "loan-choice-2-icon-text"
+
+    /* 3rd row */
+    "loan-choice-2-heading"
+
+    /* 4th row */
+    "loan-choice-2-paragraph"
+  ;
+}
+
+.loan-choice-2-icon{
+  grid-area: loan-choice-2-icon;
+}
+
+.loan-choice-2-icon-text{
+  grid-area: loan-choice-2-icon-text;
+}
+
+.loan-choice-2-heading{
+  grid-area: loan-choice-2-heading;
+}
+
+.loan-choice-2-paragraph{
+  grid-area: loan-choice-2-paragraph;
+}
+/* loan-choice-2 end */
+
+/* loan-choice-3 start */
+.loan-choice-3{
+  grid-area: loan-choice-3;
+  display: grid;
+  grid-template-rows: repeat(2, 0.4fr) repeat(2, 1fr);
+  grid-template-areas: 
+    /* 1st row */
+    "loan-choice-3-icon"
+
+    /* 2nd row */
+    "loan-choice-3-icon-text"
+
+    /* 3rd row */
+    "loan-choice-3-heading"
+
+    /* 4th row */
+    "loan-choice-3-paragraph"
+  ;
+}
+
+.loan-choice-3-icon{
+  grid-area: loan-choice-3-icon;
+}
+
+.loan-choice-3-icon-text{
+  grid-area: loan-choice-3-icon-text;
+}
+
+.loan-choice-3-heading{
+  grid-area: loan-choice-3-heading;
+}
+
+.loan-choice-3-paragraph{
+  grid-area: loan-choice-3-paragraph;
+}
+/* loan-choice-3 end */
+
+/* loan-choice-*-paragraph start */
+.loan-choice-1-paragraph, .loan-choice-2-paragraph, .loan-choice-3-paragraph{
+  font-size: 1.6rem;
+}
+/* loan-choice-*-paragraph end */
+
+/* fa icons start */
+.fa-car, .fa-building, .fa-house-chimney-window{
+  color: #52b788;
+}
+/* fa icons end */
+
+/* loan-choice-container end */
+
+/* loan-options end */
