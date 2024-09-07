@@ -123,4 +123,37 @@
 
     /* loan-options end */
     
+    /* features start */
+    .features{
+        grid-template-rows: repeat(2, 0.1fr) 1fr;
+        grid-template-areas: 
+            /* 1st row */
+            "."
+
+            /* 2nd row */
+            "features-content"
+
+            /* 3rd row */
+            "features-USP-container"
+        ;
+    }
+
+    .features-USP-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+            /* 1st row */
+            "features-USP-1"
+
+            /* 2nd row */
+            "features-USP-2"
+
+            /* 3rd row */
+            "features-USP-3"
+
+            /* 4th row */
+            "features-USP-4"
+        ;
+    }
+    /* features end */
 }

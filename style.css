@@ -13,6 +13,12 @@ a {
   text-decoration: none;
 }
 
+/* fa icons start */
+.fa-car, .fa-building, .fa-house-chimney-window, .fa-gauge-high, .fa-file-shield, .fa-hourglass-end, .fa-handshake{
+  color: #52b788;
+}
+/* fa icons end */
+
 .index-container {
   font-size: 2rem;
   display: grid;
@@ -28,13 +34,13 @@ a {
     /* 4th row */
     "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options"
     /* 5th row */
-    "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options"
+    "features features features features features features features features"
     /* 6th row */
-    "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options"
+    "features features features features features features features features"
     /* 7th row */
-    "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options"
+    "features features features features features features features features"
     /*8th row */
-    "loan-options loan-options loan-options loan-options loan-options loan-options loan-options loan-options";
+    "features features features features features features features features";
 }
 
 /* navbar start */
@@ -438,12 +444,165 @@ a {
 }
 /* loan-choice-*-paragraph end */
 
-/* fa icons start */
-.fa-car, .fa-building, .fa-house-chimney-window{
-  color: #52b788;
-}
-/* fa icons end */
-
 /* loan-choice-container end */
 
 /* loan-options end */
+
+/* features start */
+.features{
+  background-color: #f4fcfa;
+  grid-area: features;
+  display: grid;
+  /* grid-template-rows: 0.2fr repeat(2, 0.3fr);
+  grid-template-columns: 0.1fr 1fr 0.1fr; */
+  grid-template-rows: 0.3fr 0.4fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    /* 1st row */
+    "."
+
+    /* 2nd row */
+    "features-content"
+
+    /* 3rd row */
+    "features-USP-container"
+  ;
+
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+/* features-content start */
+.features-content{
+  grid-area: features-content;
+  display: grid;
+  grid-template-rows: 0.3fr 0.2fr;
+  grid-template-areas: 
+    /* 1st row */
+    "features-heading"
+
+    /* 2nd row */
+    "features-paragraph"
+  ;
+
+  /* text-align: center;
+  justify-content: center;
+  align-items: center; */
+}
+
+/* features-heading and features-paragraph start */
+.features-heading{
+  grid-area: features-heading;
+}
+
+.features-paragraph{
+  grid-area: features-paragraph;
+}
+/* features-heading and features-paragraph end */
+
+/* features-content end */
+
+/* features-USP-container start */
+.features-USP-container{
+  grid-area: features-USP-container;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: 
+    /* 1st row */
+    "features-USP-1 features-USP-2 features-USP-3 features-USP-4"
+  ;
+  gap: 2rem;
+  margin: 1rem;
+}
+
+/* features-USP-1 start */
+.features-USP-1{
+  grid-area: features-USP-1;
+  display: grid;
+  grid-template-rows: repeat(2, 0.5fr) 1fr;
+  grid-template-areas: 
+    /* 1st row */
+    "features-USP-1-icon"
+
+    /* 2nd row */
+    "features-USP-1-heading"
+
+    /* 3rd row */
+    "features-USP-1-paragraph"
+  ;
+}
+/* features-USP-1 end */
+
+/* features-USP-1 start */
+.features-USP-2{
+  grid-area: features-USP-2;
+  display: grid;
+  grid-template-rows: repeat(2, 0.5fr) 1fr;
+  grid-template-areas: 
+    /* 1st row */
+    "features-USP-2-icon"
+
+    /* 2nd row */
+    "features-USP-2-heading"
+
+    /* 3rd row */
+    "features-USP-2-paragraph"
+  ;
+}
+/* features-USP-2 end */
+
+/* features-USP-3 start */
+.features-USP-3{
+  grid-area: features-USP-3;
+  display: grid;
+  grid-template-rows: repeat(2, 0.5fr) 1fr;
+  grid-template-areas: 
+    /* 1st row */
+    "features-USP-3-icon"
+
+    /* 2nd row */
+    "features-USP-3-heading"
+
+    /* 3rd row */
+    "features-USP-3-paragraph"
+  ;
+}
+/* features-USP-3 end */
+
+/* features-USP-4 start */
+.features-USP-4{
+  grid-area: features-USP-4;
+  display: grid;
+  grid-template-rows: repeat(2, 0.5fr) 1fr;
+  grid-template-areas: 
+    /* 1st row */
+    "features-USP-4-icon"
+
+    /* 2nd row */
+    "features-USP-4-heading"
+
+    /* 3rd row */
+    "features-USP-4-paragraph"
+  ;
+}
+/* features-USP-4 end */
+
+/* all features-USP paragraph start */
+.features-USP-1-paragraph, .features-USP-2-paragraph, .features-USP-3-paragraph, .features-USP-4-paragraph{
+  font-size: 1.8rem;
+}
+/* all features-USP paragraph end */
+
+/* features' fonts bg-color start */
+.fa-gauge-high, .fa-file-shield, .fa-hourglass-end, .fa-handshake{
+  background-color: white;
+  border-radius: 100%;
+  border: 2rem solid white;
+}
+/* features' fonts bg-color end */
+
+/* features-USP-container end */
+
+/* features end */
