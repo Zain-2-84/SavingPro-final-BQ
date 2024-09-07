@@ -54,10 +54,53 @@
     }
     /* loan-options end */
 
+    .loan-choice-container{
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            /* 1st row */
+            "loan-choice-1 loan-choice-2"
+
+            /* 2nd row */
+            "loan-choice-3 ."
+        ;
+    }
+
     /* loan-choice-1 till 3 start */
     .loan-choice-1, .loan-choice-2, .loan-choice-3{
         grid-template-rows: repeat(2, 0.3fr) 0.6fr 1fr;
         font-size: 1.5rem;
     }
-    /* lon-choice-1 till 3 end */
+    /* loan-choice-1 till 3 end */
+
+    /* features start */
+    .features{
+        grid-template-rows: repeat(2, 0.3fr) 1fr;
+        grid-template-areas: 
+            /* 1st row */
+            "."
+
+            /* 2nd row */
+            "features-content"
+
+            /* 3rd row */
+            "features-USP-container"
+        ;
+    }
+
+    /* features-USP-container start */
+    .features-USP-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            /* 1st row */
+            "features-USP-1 features-USP-2"
+
+            /* 2nd row */
+            "features-USP-3 features-USP-4"
+        ;
+    }
+    /* features-USP-container end */
+    
+    /* features end */
 }
