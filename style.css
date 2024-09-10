@@ -36,11 +36,11 @@ a {
     /* 5th row */
     "features features features features features features features features"
     /* 6th row */
-    "features features features features features features features features"
+    "customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction"
     /* 7th row */
-    "features features features features features features features features"
+    "customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction"
     /*8th row */
-    "features features features features features features features features";
+    "customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction customer-satisfaction";
 }
 
 /* navbar start */
@@ -455,7 +455,7 @@ a {
   display: grid;
   /* grid-template-rows: 0.2fr repeat(2, 0.3fr);
   grid-template-columns: 0.1fr 1fr 0.1fr; */
-  grid-template-rows: 0.3fr 0.4fr 1fr;
+  grid-template-rows: 0.3fr 0.4fr 1fr 0.2fr;
   grid-template-columns: 1fr;
   grid-template-areas: 
     /* 1st row */
@@ -466,6 +466,9 @@ a {
 
     /* 3rd row */
     "features-USP-container"
+
+    /* 4th row */
+    "."
   ;
 
   text-align: center;
@@ -606,3 +609,117 @@ a {
 /* features-USP-container end */
 
 /* features end */
+
+/* customer-satisfaction start */
+.customer-satisfaction{
+  grid-area: customer-satisfaction;
+  display: grid;
+  grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-areas: 
+    /* 1st row */
+    ". . . ."
+
+    /* 2nd row */
+    ". customer-image-container customer-content ."
+
+    /* 3rd row */
+    ". . . ."
+  ;
+  background-color: #e4f1ed;
+  gap: 2rem;
+}
+
+/* customer-image-container start */
+.customer-image-container{
+  grid-area: customer-image-container;
+  display: grid;
+  /* originally 5 rows, now 7. */
+  grid-template-rows: 0.5fr repeat(5, 1fr) 0.5fr;
+  grid-template-columns: repeat(5, 1fr) 0.1fr;
+  
+}
+
+.customer-image{
+  grid-area: customer-image;
+  background-image: url(./images/customer-satisfaction/customer-image-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1 / 5;
+  grid-row: 2 / 6;
+  /* z-index: -1; */
+}
+
+.customer-percentage{
+  grid-area: customer-percentage;
+  background-color: #10c98f;
+  color: white;
+  border: 0.5rem solid #10c98f;
+  z-index: 1;
+  align-self: center;
+  text-align: center;
+  grid-column: 3 / 6;
+  grid-row: 5 / 7;
+}
+/* customer-image-container end */
+
+/* customer-content start */
+.customer-content{
+  grid-area: customer-content;
+  display: grid;
+  grid-template-rows: 0.5fr repeat(4, 1fr) 0.5fr;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-areas: 
+  /* 1st row */
+  "."
+
+  /* 2nd row */
+  "customer-heading"
+
+  /* 3rd row */
+  "customer-paragraph"
+
+  /* 4th row */
+  "customer-bullet-points"
+
+  /* 5th row */
+  "customer-learn-more"
+
+  /* 6th row */
+  "."
+  ;
+  
+  gap: 1rem;
+  align-items: center;
+}
+
+.customer-heading{
+  grid-area: customer-heading;
+}
+
+.customer-paragraph{
+  grid-area: customer-paragraph;
+}
+
+.customer-bullet-points{
+  grid-area: customer-bullet-points;
+}
+
+.customer-learn-more{
+  grid-area: customer-learn-more;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: 
+    /* 1st row */
+    ". customer-learn-more-button customer-learn-more-button customer-learn-more-button ."
+  ;
+}
+
+.customer-learn-more-button{
+  grid-area: customer-learn-more-button;
+  padding: 2rem 5rem;
+}
+/* customer-content end */
+
+/* customer-satisfaction end */
