@@ -130,5 +130,9 @@
     .customer-image-container{
         grid-template-rows: 0.1fr repeat(5, 1fr);
     }
+
+    .customer-image{
+        background-image: url(./images/customer-satisfaction/customer-image-3-medium.jpg);
+    }
     /* customer-satisfaction end */
 }
