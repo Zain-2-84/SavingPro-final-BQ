@@ -156,4 +156,34 @@
         ;
     }
     /* features end */
+
+    /* customer-satisfaction start */
+    .customer-satisfaction{
+        grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
+        grid-template-rows: 0.1fr repeat(2, 1fr) 0.1fr;
+        grid-template-areas: 
+            /* 1st row */
+            ". . . ."
+
+            /* 2nd row */
+            ". customer-image-container customer-image-container ."
+
+            /* 3rd row */
+            ". customer-content customer-content ."
+
+            /* 4th row */
+            ". . . ."
+        ;
+        gap: 1rem;
+    }
+    
+    .customer-image-container{
+        grid-template-rows: 0.1fr repeat(5, 1fr);
+    }
+
+    .customer-image{
+        background-image: url(./images/customer-satisfaction/customer-image-2-small.jpg);
+        grid-column: 1 / 6;
+    }
+    /* customer-satisfaction end */
 }
