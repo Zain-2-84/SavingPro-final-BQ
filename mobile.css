@@ -186,4 +186,41 @@
         grid-column: 1 / 6;
     }
     /* customer-satisfaction end */
+
+    /* footer start */
+    .footer{
+        grid-template-rows: 0.1fr repeat(3, 1fr) repeat(2, 0.1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            /* 1st row */
+            ". ."
+
+            /* 2nd row */
+            "company-content company-content"
+
+            /* 3rd row */
+            "quick-links quick-links"
+
+            /* 4th row */
+            "newsLetter newsLetter"
+
+            /* 5th row */
+            "copyrights copyrights"
+
+            /* 6th row */
+            ". ."
+        ;
+    }
+
+    .copyrights{
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+    }
+
+    /* all footer paragraph font size start */
+    .company-paragraph, .quick-links-work, .quick-links-services, .quick-links-products, .newsLetter-paragraph, .copyrights-paragraph{
+        font-size: 1.6rem;
+    }
+    /* all footer paragraph font size end */
+
+    /* footer end */
 }

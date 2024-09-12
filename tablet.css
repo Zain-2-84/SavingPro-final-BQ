@@ -135,4 +135,53 @@
         background-image: url(./images/customer-satisfaction/customer-image-3-medium.jpg);
     }
     /* customer-satisfaction end */
+
+    /* footer start */
+    .footer{
+        grid-template-rows: 0.1fr repeat(2, 1fr) repeat(2, 0.1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            /* 1st row */
+            ". ."
+
+            /* 2nd row */
+            "company-content quick-links"
+
+            /* 3rd row */
+            "newsLetter newsLetter"
+
+            /* 4th row */
+            "copyrights copyrights"
+
+            /* 5th row */
+            ". ."
+        ;
+    }
+
+    .newsLetter-input-container{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+            /* 1st row */
+            "newsLetter-input newsLetter-button . ."
+        ;
+        gap: 0.3rem;
+    }
+
+    .newsLetter-social-media-links{
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-areas: 
+            /* 1st row */
+            "social-media-1 social-media-2 social-media-3 social-media-4 . . . ."
+        ;
+    }
+
+    .copyrights{
+        grid-template-columns: 0.1fr 1fr 0.1fr;
+    }
+    /* all footer paragraph font size start */
+    .company-paragraph, .quick-links-work, .quick-links-services, .quick-links-products, .newsLetter-paragraph{
+        font-size: 1.7rem;
+    }
+    /* all footer paragraph font size end */
+    /* footer end */
 }
