@@ -48,7 +48,7 @@ a {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-areas: 
-        /* 1st row */ "navbar-company-logo navbar-company-logo . navbar-apply-for-loan navbar-about navbar-services navbar-contact navbar-login";
+        /* 1st row */ "navbar-company-logo navbar-company-logo . navbar-loan-apply navbar-about navbar-services navbar-contact navbar-login";
   align-items: center;
   /* background-color: #d8f3dc; */
   background-color: #f0fff1;
@@ -61,9 +61,9 @@ a {
 }
 /* navbar-company-name end */
 
-/* navbar-apply-for-loan start */
-.navbar-apply-for-loan {
-  grid-area: navbar-apply-for-loan;
+/* navbar-loan-apply start */
+.navbar-loan-apply {
+  grid-area: navbar-loan-apply;
   justify-self: center;
   text-align: center;
   background-color: #52b788;
@@ -71,7 +71,7 @@ a {
   padding: 6%;
 }
 
-.navbar-apply-for-loan a {
+.navbar-loan-apply a {
   color: white;
 }
 
@@ -81,7 +81,7 @@ a {
 .navbar-login a {
   color: black;
 }
-/* navbar-apply-for-loan end */
+/* navbar-loan-apply end */
 
 /* navbar-about start*/
 .navbar-about {
@@ -945,3 +945,9 @@ a {
 /* copyrights end */
 
 /* footer end */
+
+/* loan-apply-container start */
+.loan-apply-container{
+  grid-area: loan-apply-container;
+}
+/* loan-apply-container end */
