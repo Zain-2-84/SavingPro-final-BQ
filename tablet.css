@@ -4,7 +4,7 @@
         grid-template-columns: repeat(7, 1fr);
         grid-template-areas: 
             /* 1st row */
-            "navbar-company-logo . navbar-apply-for-loan navbar-about navbar-services navbar-contact navbar-login"
+            "navbar-company-logo . navbar-loan-apply navbar-about navbar-services navbar-contact navbar-login"
         ;
     }
 

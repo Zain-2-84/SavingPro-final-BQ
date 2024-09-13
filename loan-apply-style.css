@@ -1,0 +1,354 @@
+.index-container-for-loan {
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: repeat(8, minmax(3rem, 1fr));
+    grid-template-rows: auto 1fr repeat(2, auto);
+    grid-template-areas: 
+          /* 1st row */
+      "navbar navbar navbar navbar navbar navbar navbar navbar"
+      /* 2nd row */
+      ". . . . . . . ."
+      /* 3rd row */
+      "loan-apply-section loan-apply-section loan-apply-section loan-apply-section loan-apply-section loan-apply-section loan-apply-section loan-apply-section"
+      
+      /* 4th row */
+      "footer footer footer footer footer footer footer footer"
+      ;
+  }
+
+  /* loan-apply-section start */
+  .loan-apply-section{
+    grid-area: loan-apply-section;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-areas: 
+        /* 1st row */
+        ". loan-apply-form ."
+    ;
+  }
+
+  /* loan-apply-form start */
+  .loan-apply-form{
+    grid-area: loan-apply-form;
+    display: grid;
+    /* main 22 rows, extra 2 rows */
+    grid-template-rows: 0.3fr repeat(12, 1fr) 0.3fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        /* 1st row */
+        ". ."
+
+        /* 2nd row */
+        "loan-amount purpose-of-loan"
+
+        /* 3rd row */
+        "choose-gender choose-gender"
+
+        /* 4th row */
+        "first-name last-name"
+
+        /* 5th row */
+        "number-of-dependents number-of-dependents"
+
+        /* 6th row */
+        "email phone-number"
+
+        /* 7th row */
+        "marital-status marital-status"
+
+        /* 8th row */
+        "city-and-province postal-code"
+
+        /* 9th row */
+        "house-address house-address"
+
+        /* 10th row */
+        "house-owner-status  house-owner-status"
+
+        /* 11th row */
+        "employment-industry employeer-name"
+
+        /* 12th row */
+        "work-phone-number monthly-income"
+
+        /* 13th row */
+        "apply-loan-now-button apply-loan-now-button"
+
+        /* 14th row */
+        ". ."
+    ;
+    text-align: center;
+    /* padding: 1rem; */
+    justify-self: center;
+    align-items: center;
+    /* padding: 0 3rem; */
+  }
+
+  .loan-amount{
+    display: grid;
+    grid-area: loan-amount;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .purpose-of-loan{
+    display: grid;
+    grid-area: purpose-of-loan;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .choose-gender{
+    grid-area: choose-gender;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .first-name{
+    display: grid;
+    grid-area: first-name;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .last-name{
+    display: grid;
+    grid-area: last-name;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .number-of-dependents{
+    grid-area: number-of-dependents;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .email{
+    display: grid;
+    grid-area: email;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .phone-number{
+    display: grid;
+    grid-area: phone-number;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .marital-status{
+    grid-area: marital-status;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .city-and-province{
+    display: grid;
+    grid-area: city-and-province;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .postal-code{
+    display: grid;
+    grid-area: postal-code;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .house-address{
+    display: grid;
+    grid-area: house-address;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+    width: 35vw;
+  }
+
+  .house-owner-status{
+    grid-area: house-owner-status;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .employment-industry{
+    display: grid;
+    grid-area: employment-industry;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .employeer-name{
+    display: grid;
+    grid-area: employeer-name;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+  }
+
+  .work-phone-number{
+    display: grid;
+    grid-area: work-phone-number;
+    padding: 1rem 8rem;
+  }
+
+  .monthly-income{
+    display: grid;
+    grid-area: monthly-income;
+    padding: 1rem 8rem;
+  }
+
+  .apply-loan-now-button{
+    grid-area: apply-loan-now-button;
+  }
+
+  .apply-loan-now-button-element{
+    width: 40vw;
+    padding: 2rem 0;
+    background-color: #10c98f;
+    color: white;
+    border: none;
+  }
+
+  /* loan-apply-form end */
+
+  select{
+    width: 15vw;
+    padding: 0.5rem;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  ul li{
+    display: inline;
+  }
+
+
+  /* loan-apply-section end */
+
+  /* tablet query start */
+  @media (min-width: 501px) and (max-width: 768px){
+    select{
+      width: 20vw;
+    }
+
+    .house-address-input{
+      width: 35vw;
+    }
+
+    .apply-loan-now-button-element{
+      width: 70vw;
+    }
+  }
+  /* tablet query end */
+
+  /* mobile query start */
+  @media (min-width: 300px) and (max-width: 500px){
+    /* loan-apply-form start */
+  .loan-apply-form{
+    grid-area: loan-apply-form;
+    display: grid;
+    /* main 22 rows, extra 2 rows */
+    grid-template-rows: 0.2fr repeat(18, 0.5fr) 0.2fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        /* 1st row */
+        "."
+
+        /* 2nd row */
+        "loan-amount"
+
+        /* 3rd row */
+        "purpose-of-loan"
+
+        /* 4th row */
+        "choose-gender"
+
+        /* 5th row */
+        "first-name"
+
+        /* 6th row */
+        "last-name"
+
+        /* 7th row */
+        "number-of-dependents"
+
+        /* 8th row */
+        "email"
+
+        /* 9th row */
+        "phone-number"
+
+        /* 10th row */
+        "marital-status"
+
+        /* 11th row */
+        "city-and-province"
+
+        /* 12th row */
+        "postal-code"
+
+        /* 13th row */
+        "house-address"
+
+        /* 14th row */
+        "house-owner-status"
+
+        /* 15th row */
+        "employment-industry"
+
+        /* 16th row */
+        "employeer-name"
+
+        /* 17th row */
+        "work-phone-number"
+
+        /* 18th row */
+        "monthly-income"
+
+        /* 19th row */
+        "apply-loan-now-button"
+
+        /* 20th row */
+        "."
+    ;
+
+    text-align: center;
+    padding: 1rem 0;
+    justify-self: center;
+    align-items: center;
+  }
+
+  /* loan-apply-form end */
+
+  select{
+    width: 45vw;
+  }
+
+  ul li{
+    display: block;
+  }
+
+  .apply-loan-now-button-element{
+    width: 50vw;
+  }
+
+  }
+  /* mobile query end */

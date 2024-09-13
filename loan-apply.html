@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SavingPro Finance - Home</title>
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- laptop.css -->
+     <link rel="stylesheet" href="./laptop.css">
+
+    <!-- tablet.css -->
+    <link rel="stylesheet" href="./tablet.css" />
+
+    <!-- mobile.css -->
+    <link rel="stylesheet" href="./mobile.css" />
+
+    <!-- loan-apply-style.css -->
+     <link rel="stylesheet" href="./loan-apply-style.css">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- index-container start -->
+    <div class="index-container-for-loan">
+        <!-- navbar start -->
+        <div class="navbar">
+            
+            <!-- navbar company name start -->
+            <div class="navbar-company-logo">
+                <a href="./index.html">
+                    <img src="./images/SavingPro-green-bg-removed.png" style="width: 100%;" alt="Company logo">
+                </a>
+            </div>
+            <!-- navbar company name end -->
+
+            <!-- navbar-loan-apply start -->
+            <div class="navbar-loan-apply">
+                <a href="./loan-apply.html">Loan apply</a>
+            </div>
+            <!-- navbar-loan-apply end -->
+
+            <!-- navbar About start -->
+             <div class="navbar-about">
+                <a href="./about.html">About</a>
+             </div>
+            <!-- navbar About end -->
+
+            <!-- navbar Services start -->
+            <div class="navbar-services">
+                <a href="./services.html">Services</a>
+             </div>
+            <!-- navbar Services end -->
+
+            <!-- navbar Contact start -->
+            <div class="navbar-contact">
+                <a href="./contact.html">Contact</a>
+             </div>
+            <!-- navbar Contact end -->
+
+            <!-- navbar Login start -->
+            <div class="navbar-login">
+                <a href="./login.html">Login</a>
+             </div>
+            <!-- navbar Login end -->
+        </div>
+        <!-- navbar end -->
+
+        <!-- loan-apply-section start -->
+         <div class="loan-apply-section">
+            <!-- loan-apply-form start -->
+             <div class="loan-apply-form">
+                <form action="" class="loan-apply-form">
+                  <!-- loan-amount start -->
+                   <div class="loan-amount">
+                     <label for="loan-amount-label" class="loan-amount-label">
+                       Loan amount (PKR): 
+                     </label>
+   
+                     <input type="number" class="loan-amount-input" required>
+                   </div>
+                  <!-- loan-amount start -->
+
+                  <!-- purpose-of-loan start -->
+                   <div class="purpose-of-loan">
+                     <label for="purpose-of-loan-label" class="purpose-of-loan-label">
+                      Purpose of loan: 
+                     </label>
+  
+                     <select name="purpose-of-loan-select" id="purpose-of-loan-select" class="purpose-of-loan-select" required>
+                      <option value="purpose-1">Emergency</option>
+                      <option value="purpose-2">Business startup</option>
+                      <option value="purpose-3">Education fee</option>
+                     </select>
+                   </div>
+                  <!-- purpose-of-loan end -->
+
+                  <!-- Choose-gender start -->
+                   <div class="choose-gender">
+                     <label for="choose-gender-label" class="choose-gender-label">
+                      Choose gender: 
+                     </label>
+  
+                     <p style="padding: 1rem 0;">
+                       <input type="radio" name="gender-1-radio" id="gender-1-radio" class="gender-1-radio" required>Male
+    
+                       <input type="radio" name="gender-1-radio" id="gender-1-radio" class="gender-1-radio" required>Female
+                     </p>
+                   </div>
+                  <!-- Choose-gender end -->
+
+                  <!-- first-name start -->
+                   <div class="first-name">
+                     <label for="first-name-label" class="first-name-label">
+                      First Name: 
+                     </label>
+  
+                     <input type="text" class="first-name-input" required>
+                   </div>
+                  <!-- first-name end -->
+
+                  <!-- last-name start -->
+                   <div class="last-name">
+                     <label for="last-name-label" class="last-name-label">
+                       Last Name: 
+                      </label>
+   
+                      <input type="text" class="last-name-input" required>
+                   </div>
+                  <!-- last-name end -->
+
+                  <!-- number-of-dependents start -->
+                   <div class="number-of-dependents">
+                     <label for="number-of-dependents-label" class="number-of-dependents-label">
+                      Number of dependents: 
+                     </label>
+                     
+                     <select name="number-of-dependents-select" id="number-of-dependents-select" class="number-of-dependents-select">
+                        <option value="dependent-1">Father</option>
+                        <option value="dependent-2">Mother</option>
+                        <option value="dependent-3">Other</option>                  
+                       </select>
+                   </div>
+                  <!-- number-of-dependents end -->
+
+                  <!-- email start -->
+                   <div class="email">
+                     <label for="email-label" class="email-label">
+                       Email: 
+                     </label>
+   
+                     <input type="email" name="email-input" id="email-input" class="email-input" required>
+                   </div>
+                  <!-- email end -->
+
+                  <!-- phone-number start -->
+                   <div class="phone-number">
+                     <label for="phone-number-label" class="phone-number-label">
+                       Phone number: 
+                     </label>
+   
+                     <input type="number" name="phone-number-input" id="phone-number-input" class="phone-number-input" required>
+                   </div>
+                  <!-- phone-number end -->
+
+                  <!-- marital-status start -->
+                   <div class="marital-status">
+                     <label for="marital-status-label" class="marital-status-label">
+                      Marital status: 
+                     </label>
+  
+                     <ul style="padding: 1rem 0;">
+                      <li>
+                        <input type="radio" name="marital-status-1-radio" id="marital-status-1-radio" class="marital-status-1-radio">Single
+                      </li>
+                      <li>
+                        <input type="radio" name="marital-status-1-radio" id="marital-status-1-radio" class="marital-status-1-radio">Married
+                      </li>
+                      <li>
+                        <input type="radio" name="marital-status-1-radio" id="marital-status-1-radio" class="marital-status-1-radio">Engaged
+                      </li>
+                     </ul>
+                   </div>
+                  <!-- marital-status end -->
+
+                  <!-- city-and-province start -->
+                   <div class="city-and-province">
+                     <label for="city-and-province-label" class="city-and-province-label">
+                      City and Province: 
+                     </label>
+  
+                     <input type="text" class="city-and-province-input" required>
+                   </div>
+                  <!-- city-and-province end -->
+
+                  <!-- postal-code start -->
+                   <div class="postal-code">
+                     <label for="postal-code-label" class="postal-code-label">
+                      Postal code:
+                     </label>
+  
+                     <input type="number" name="postal-code-input" id="postal-code-input" class="postal-code-input" required>
+                   </div>
+                  <!-- postal-code end -->
+
+                  <!-- house-address start -->
+                   <div class="house-address">
+                     <label for="house-address-label" class="house-address-label">
+                      House Address: 
+                     </label>
+  
+                     <input type="text" class="house-address-input" required>
+                   </div>
+                  <!-- house-address end -->
+
+                  <!-- house-owner-status start -->
+                   <div class="house-owner-status">
+                     <label for="house-owner-status-label" class="house-owner-status-label">
+                      House Owner status: 
+                     </label>
+  
+                     <select name="house-owner-status-select" id="house-owner-status-select" class="house-owner-status-select">
+                      <option value="status-1">Status 1</option>
+                      <option value="status-2">Status 2</option>
+                      <option value="status-3">Status 3</option>
+                     </select>
+                   </div>
+                  <!-- house-owner-status end -->
+
+                  <!-- employment-industry start -->
+                  <div class="employment-industry">
+                    <label for="employment-industry-label" class="employment-industry-label">
+                      Employment industry: 
+                    </label>
+
+                    <input type="text" class="employment-industry-input" required>
+                  </div>
+                  <!-- employment-industry end -->
+
+                  <!-- employeer-name start -->
+                   <div class="employeer-name">
+                    <label for="employeer-name-label" class="employeer-name-label">
+                      Employeer name: 
+                    </label>
+
+                    <input type="text" class="employeer-name-input" required>
+                   </div>
+                  <!-- employeer-name end -->
+
+                  <!-- work-phone-number start -->
+                   <div class="work-phone-number">
+                    <label for="work-phone-number-label" class="work-phone-number-label">
+                      Work phone number: 
+                    </label>
+
+                    <input type="number" name="work-phone-number-input" id="work-phone-number-input" class="work-phone-number-input" required>
+                   </div>
+                  <!-- work-phone-number end -->
+
+                  <!-- monthly-income start -->
+                   <div class="monthly-income">
+                    <label for="monthly-income-label" class="monthly-income-label">
+                      Monthly income: 
+                    </label>
+
+                    <input type="number" class="monthly-income-input" required>
+                   </div>
+                  <!-- monthly-income end -->
+
+                  <!-- apply-loan-now-button start -->
+                   <div class="apply-loan-now-button">
+                    <button type="submit" class="apply-loan-now-button-element" style="text-transform: uppercase;">Apply Now</button>
+                   </div>
+                  <!-- apply-loan-now-button end -->
+                </form>
+             </div>
+            <!-- loan-apply-form end -->
+         </div>
+        <!-- loan-apply-section start -->
+
+        <!-- footer start -->
+        <div class="footer">
+            <!-- company-content start -->
+            <div class="company-content">
+              <div class="company-logo">
+                <img src="./images/SavingPro-green-bg-removed.png" style="width: 100%;" alt="Company logo">
+              </div>
+
+              <div class="company-heading">
+                <h2>SavingPro</h2>
+              </div>
+
+              <div class="company-paragraph">
+                <p>This is a finance and investment resource. Like Pakistan Stock Exchange, but smaller.
+
+                  It is where we provide educational content on personal finance, budgeting, and investing. Offers tools like calculators, budgeting spreadsheets, and monetize through affiliate links, ads, and online courses.</p>
+              </div>
+            </div>
+            <!-- company-content end -->
+
+            <!-- quick-links start -->
+             <div class="quick-links">
+              <div class="quick-links-heading">
+                <h2>Quick Links.</h2>
+              </div>
+
+              <div class="quick-links-work">
+                Work
+              </div>
+
+              <div class="quick-links-services">
+                Services
+              </div>
+
+              <div class="quick-links-products">
+                <p>Products</p>
+              </div>
+             </div>
+            <!-- quick-links end -->
+
+            <!-- newsLetter start --> 
+             <div class="newsLetter">
+              <div class="newsLetter-heading">
+                <h2>Newsletter</h2>
+              </div>
+
+              <div class="newsLetter-paragraph">
+                <p>Subcribe to newsletter to get updates.</p>
+              </div>
+
+              <div class="newsLetter-input-container">
+                <div class="newsLetter-input">
+                  <input type="email" placeholder="Enter your Email." style="padding: 2rem 4rem;">
+                </div>
+
+                <div class="newsLetter-button">
+                  <button type="submit" class="newsLetter-button-btn">
+                    <i class="fa-solid fa-square-caret-right fa-5x"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="newsLetter-social-media-links">
+                <div class="social-media-1">
+                  <i class="fa-brands fa-facebook fa-2x"></i>
+                </div>
+                <div class="social-media-2">
+                  <i class="fa-brands fa-instagram fa-2x"></i>
+                </div>
+                <div class="social-media-3">
+                  <i class="fa-brands fa-linkedin-in fa-2x"></i>
+                </div>
+                <div class="social-media-4">
+                  <i class="fa-brands fa-youtube fa-2x"></i>
+                </div>
+              </div>
+             </div>
+            <!-- newsLetter end -->
+
+            <!-- copyrights start -->
+            <div class="copyrights">
+              <div class="copyrights-paragraph">
+                <p>Copyrights &copy; 2024 All rights reserved | This is made by Bano Qabil 3.0.</p>
+              </div>
+            </div>
+            <!-- copyrights end -->
+           </div>
+         <!-- footer end -->
+    </div>
+    <!-- index-container end -->
+  </body>
+</html>
