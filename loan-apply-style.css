@@ -344,6 +344,8 @@
     background-color: white;
     justify-items: center;
     align-items: center;
+    border-radius: 5rem;
+    padding: 2rem;
   }
 
   .calculator-heading{
@@ -375,9 +377,19 @@
     .loan-apply-section{
       overflow-x: hidden;
       grid-template-columns: 0.2fr 0.5fr 0.2fr;
+      grid-template-rows: repeat(4, auto);
       grid-template-areas: 
         /* 1st row */
+        ". . ."
+
+        /* 2nd row */
         ". loan-apply-form ."
+
+        /* 3rd row */
+        ". calculator ."
+
+        /* 4th row */
+        ". . ."
       ;
       background-image: url(./images/loan-apply/loan-apply-bg-square-medium.jpg);
       justify-content: center;
@@ -385,7 +397,7 @@
 
     .loan-apply-form{
       grid-template-columns: repeat(2, 1fr);
-      font-size: 1.7rem;
+      font-size: 1.8rem;
     }
 
 
@@ -417,8 +429,16 @@
   @media (min-width: 300px) and (max-width: 500px){
     .loan-apply-section{
       overflow-x: hidden;
-      grid-template-columns: 0.2fr 1fr 0.2fr;
+      grid-template-columns: 0.1fr 1fr 0.1fr;
       background-image: url(./images/loan-apply/loan-apply-bg-vertical-medium.jpg);
+      justify-content: center;
+      justify-items: center;
+      justify-self: center;
+      margin: 0 auto;
+    }
+
+    .loan-apply-heading, .loan-apply-calculator-link-button{
+      font-size: calc(1.5rem + .5vw);
     }
 
     /* loan-apply-form start */
@@ -506,7 +526,7 @@
     display: block;
   }
 
-  .apply-loan-now-button-element{
+  .loan-apply-choose-container, .apply-loan-now-button-element{
     min-width: 50vw;
   }
 
