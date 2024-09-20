@@ -56,6 +56,19 @@
     }
     /* page font-size end */
 
+    /* intro-loan-instant start */
+    .intro-loan-instant{
+        justify-content: center;
+        justify-items: center;
+        /* justify-self: center; */
+    }
+
+    .intro-form-enter-amount-input, .enter-due-date{
+        justify-self: center;
+        min-width: 38vw;
+    }
+    /* intro-loan-instant end */
+
     /* intro-content-learn start */
     .intro-content-learn{
         grid-template-rows: 0.2fr 1fr 0.2fr;

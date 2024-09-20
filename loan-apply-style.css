@@ -18,63 +18,85 @@
 
   /* loan-apply-section start */
   .loan-apply-section{
+    background-image: url(./images/loan-apply/loan-apply-bg-medium.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-area: loan-apply-section;
     display: grid;
     grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 0.1fr auto 0.1fr auto 0.1fr;
     grid-template-areas: 
         /* 1st row */
+        ". . ."
+
+        /* 2nd row */
         ". loan-apply-form ."
+
+        /* 3rd row */
+        ". . ."
+
+        /* 4th row */
+        " . calculator ."
+
+        /* 5th row */
+        ". . ."
     ;
+    gap: 2rem;
   }
 
   /* loan-apply-form start */
   .loan-apply-form{
+    background-color: white;
     grid-area: loan-apply-form;
     display: grid;
     /* main 22 rows, extra 2 rows */
-    grid-template-rows: 0.3fr repeat(12, 1fr) 0.3fr;
+    grid-template-rows: 0.3fr repeat(13, 1fr) 0.3fr;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
         /* 1st row */
         ". ."
 
         /* 2nd row */
-        "loan-amount purpose-of-loan"
+        "loan-apply-choose-container loan-apply-choose-container"
 
         /* 3rd row */
-        "choose-gender choose-gender"
+        "loan-amount purpose-of-loan"
 
         /* 4th row */
-        "first-name last-name"
+        "choose-gender choose-gender"
 
         /* 5th row */
-        "number-of-dependents number-of-dependents"
+        "first-name last-name"
 
         /* 6th row */
-        "email phone-number"
+        "number-of-dependents number-of-dependents"
 
         /* 7th row */
-        "marital-status marital-status"
+        "email phone-number"
 
         /* 8th row */
-        "city-and-province postal-code"
+        "marital-status marital-status"
 
         /* 9th row */
-        "house-address house-address"
+        "city-and-province postal-code"
 
         /* 10th row */
-        "house-owner-status  house-owner-status"
+        "house-address house-address"
 
         /* 11th row */
-        "employment-industry employeer-name"
+        "house-owner-status  house-owner-status"
 
         /* 12th row */
-        "work-phone-number monthly-income"
+        "employment-industry employeer-name"
 
         /* 13th row */
-        "apply-loan-now-button apply-loan-now-button"
+        "work-phone-number monthly-income"
 
         /* 14th row */
+        "apply-loan-now-button apply-loan-now-button"
+
+        /* 15th row */
         ". ."
     ;
     text-align: center;
@@ -83,6 +105,42 @@
     align-items: center;
     /* padding: 0 3rem; */
   }
+
+  /* loan-apply-choose container start */
+  .loan-apply-choose-container{
+    display: grid;
+    grid-area: loan-apply-choose-container;
+    gap: 2rem;
+    justify-self: center;
+    padding: 1rem 8rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    /* 1st row */
+      "loan-apply-heading"
+
+    /* 2nd row */
+    "loan-apply-calculator-link"
+    ;
+  }
+
+  .loan-apply-heading{
+    grid-area: loan-apply-heading;
+  }
+
+  .loan-apply-calculator-link{
+    grid-area: loan-apply-calculator-link;
+  }
+
+  .loan-apply-calculator-link-button{
+    text-decoration: none;
+    color: white;
+    background-color: #52b788;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+  }
+  /* loan-apply-choose container end */
+
 
   .loan-amount{
     display: grid;
@@ -124,6 +182,7 @@
   }
 
   .number-of-dependents{
+    display: grid;
     grid-area: number-of-dependents;
     gap: 2rem;
     justify-self: center;
@@ -179,6 +238,7 @@
   }
 
   .house-owner-status{
+    display: grid;
     grid-area: house-owner-status;
     gap: 2rem;
     justify-self: center;
@@ -205,12 +265,14 @@
     display: grid;
     grid-area: work-phone-number;
     padding: 1rem 8rem;
+    gap: 2rem;
   }
 
   .monthly-income{
     display: grid;
     grid-area: monthly-income;
     padding: 1rem 8rem;
+    gap: 2rem;
   }
 
   .apply-loan-now-button{
@@ -227,10 +289,27 @@
 
   /* loan-apply-form end */
 
-  select{
-    width: 15vw;
-    padding: 0.5rem;
+  /* all input, button-input, select, house-address start */
+  .house-address-input{
+    max-width: 40vw;
+    min-width: 17vw;
   }
+
+  .apply-loan-now-button-element{
+    max-width: 40vw;
+    min-width: 17vw;
+  }
+
+  input[type="text"], input[type="email"], input[type="number"]{
+    max-width: 40vw;
+    min-width: 17vw;
+  }
+
+  select{
+    max-width: 40vw;
+    min-width: 17vw;
+  }
+  /* all input, button-input, select, house-address end */
 
   ul{
     list-style: none;
@@ -240,93 +319,198 @@
     display: inline;
   }
 
+  /* calculator start */
+  .calculator{
+    grid-area: calculator;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+      /* 1st row */
+      "calculator-heading"
+
+      /* 2nd row */
+      "amount-content"
+
+      /* 3rd row */
+      "interest-content"
+
+      /* 4th row */
+      "months-to-pay-content"
+
+      /* 5th row */
+      "result-content"
+    ;
+
+    background-color: white;
+    justify-items: center;
+    align-items: center;
+    border-radius: 5rem;
+    padding: 2rem;
+  }
+
+  .calculator-heading{
+    grid-area: calculator-heading;
+  }
+
+  .amount-content{
+    grid-area: amount-content;
+  }
+
+  .interest-content{
+    grid-area: interest-content;
+  }
+
+  .months-to-pay-content{
+    grid-area: months-to-pay-content;
+  }
+
+  .result-content{
+    grid-area: result-content;
+  }
+  /* calculator end */
+
 
   /* loan-apply-section end */
 
   /* tablet query start */
   @media (min-width: 501px) and (max-width: 768px){
-    select{
-      width: 20vw;
+    .loan-apply-section{
+      overflow-x: hidden;
+      grid-template-columns: 0.2fr 0.5fr 0.2fr;
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: 
+        /* 1st row */
+        ". . ."
+
+        /* 2nd row */
+        ". loan-apply-form ."
+
+        /* 3rd row */
+        ". calculator ."
+
+        /* 4th row */
+        ". . ."
+      ;
+      background-image: url(./images/loan-apply/loan-apply-bg-square-medium.jpg);
+      justify-content: center;
     }
 
+    .loan-apply-form{
+      grid-template-columns: repeat(2, 1fr);
+      font-size: 1.8rem;
+    }
+
+
+    /* all input, button-input, select, house-address start */
     .house-address-input{
-      width: 35vw;
+      max-width: 40vw;
+      min-width: 17vw;
     }
 
     .apply-loan-now-button-element{
-      width: 70vw;
+      max-width: 40vw;
+      min-width: 17vw;
     }
+
+    input[type="text"], input[type="email"], input[type="number"]{
+      max-width: 40vw;
+      min-width: 17vw;
+    }
+
+    select{
+      max-width: 40vw;
+      min-width: 17vw;
+    }
+    /* all input, button-input, select, house-address end */
   }
   /* tablet query end */
 
   /* mobile query start */
   @media (min-width: 300px) and (max-width: 500px){
+    .loan-apply-section{
+      overflow-x: hidden;
+      grid-template-columns: 0.1fr 1fr 0.1fr;
+      background-image: url(./images/loan-apply/loan-apply-bg-vertical-medium.jpg);
+      justify-content: center;
+      justify-items: center;
+      justify-self: center;
+      margin: 0 auto;
+    }
+
+    .loan-apply-heading, .loan-apply-calculator-link-button{
+      font-size: calc(1.5rem + .5vw);
+    }
+
     /* loan-apply-form start */
   .loan-apply-form{
+    font-size: 2rem;
     grid-area: loan-apply-form;
     display: grid;
     /* main 22 rows, extra 2 rows */
-    grid-template-rows: 0.2fr repeat(18, 0.5fr) 0.2fr;
+    grid-template-rows: 0.2fr repeat(19, 0.5fr) 0.2fr;
     grid-template-columns: 1fr;
     grid-template-areas: 
         /* 1st row */
         "."
 
         /* 2nd row */
-        "loan-amount"
+        "loan-apply-choose-container"
 
         /* 3rd row */
-        "purpose-of-loan"
+        "loan-amount"
 
         /* 4th row */
-        "choose-gender"
+        "purpose-of-loan"
 
         /* 5th row */
-        "first-name"
+        "choose-gender"
 
         /* 6th row */
-        "last-name"
+        "first-name"
 
         /* 7th row */
-        "number-of-dependents"
+        "last-name"
 
         /* 8th row */
-        "email"
+        "number-of-dependents"
 
         /* 9th row */
-        "phone-number"
+        "email"
 
         /* 10th row */
-        "marital-status"
+        "phone-number"
 
         /* 11th row */
-        "city-and-province"
+        "marital-status"
 
         /* 12th row */
-        "postal-code"
+        "city-and-province"
 
         /* 13th row */
-        "house-address"
+        "postal-code"
 
         /* 14th row */
-        "house-owner-status"
+        "house-address"
 
         /* 15th row */
-        "employment-industry"
+        "house-owner-status"
 
         /* 16th row */
-        "employeer-name"
+        "employment-industry"
 
         /* 17th row */
-        "work-phone-number"
+        "employeer-name"
 
         /* 18th row */
-        "monthly-income"
+        "work-phone-number"
 
         /* 19th row */
-        "apply-loan-now-button"
+        "monthly-income"
 
         /* 20th row */
+        "apply-loan-now-button"
+
+        /* 21st row */
         "."
     ;
 
@@ -338,17 +522,27 @@
 
   /* loan-apply-form end */
 
-  select{
-    width: 45vw;
-  }
-
   ul li{
     display: block;
   }
 
-  .apply-loan-now-button-element{
-    width: 50vw;
+  .loan-apply-choose-container, .apply-loan-now-button-element{
+    min-width: 50vw;
   }
+
+  /* all input[type="text"] and select start */
+  input[type="text"], input[type="email"], input[type="number"]{
+    max-width: 50vw;
+    min-width: 30vw;
+  }
+
+  select{
+    max-width: 50vw;
+    min-width: 30vw;
+    /* margin: 0 auto; */
+    justify-content: center;
+  } 
+  /* all input[type="text"] and select end */
 
   }
   /* mobile query end */
