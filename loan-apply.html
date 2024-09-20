@@ -79,6 +79,21 @@
             <!-- loan-apply-form start -->
              <div class="loan-apply-form">
                 <form action="" class="loan-apply-form">
+                  <!-- loan-apply-choose-container start -->
+                   <div class="loan-apply-choose-container">
+                    <!-- loan-apply-heading start -->
+                     <div class="loan-apply-heading">
+                      <h2>Loan apply form.</h2>
+                     </div>
+                    <!-- loan-apply-heading end -->
+                    <!-- loan-apply-calculator-link start -->
+                     <div class="loan-apply-calculator-link">
+                      <a class="loan-apply-calculator-link-button" href="#calculator">Loan Calculator</a>
+                     </div>
+                    <!-- loan-apply-calculator-link end -->
+                   </div>
+                  <!-- loan-apply-choose-container end -->
+
                   <!-- loan-amount start -->
                    <div class="loan-amount">
                      <label for="loan-amount-label" class="loan-amount-label">
@@ -110,9 +125,9 @@
                      </label>
   
                      <p style="padding: 1rem 0;">
-                       <input type="radio" name="gender-1-radio" id="gender-1-radio" class="gender-1-radio" required>Male
+                       <input type="radio" name="gender-1-radio" id="gender-1-radio" class="gender-1-radio" required> Male
     
-                       <input type="radio" name="gender-1-radio" id="gender-1-radio" class="gender-1-radio" required>Female
+                       <input type="radio" name="gender-1-radio" id="gender-1-radio" class="gender-1-radio" required> Female
                      </p>
                    </div>
                   <!-- Choose-gender end -->
@@ -179,13 +194,13 @@
   
                      <ul style="padding: 1rem 0;">
                       <li>
-                        <input type="radio" name="marital-status-1-radio" id="marital-status-1-radio" class="marital-status-1-radio">Single
+                        <input type="radio" name="marital-status-1-radio" id="marital-status-1-radio" class="marital-status-1-radio">&nbsp; Single
                       </li>
                       <li>
-                        <input type="radio" name="marital-status-1-radio" id="marital-status-1-radio" class="marital-status-1-radio">Married
+                        <input type="radio" name="marital-status-1-radio" id="marital-status-1-radio" class="marital-status-1-radio">&nbsp; Married
                       </li>
                       <li>
-                        <input type="radio" name="marital-status-1-radio" id="marital-status-1-radio" class="marital-status-1-radio">Engaged
+                        <input type="radio" name="marital-status-1-radio" id="marital-status-1-radio" class="marital-status-1-radio">&nbsp; Engaged
                       </li>
                      </ul>
                    </div>
@@ -283,6 +298,48 @@
                 </form>
              </div>
             <!-- loan-apply-form end -->
+
+            <!-- calculator start -->
+            <div id="calculator" class="calculator">
+              <!-- calculator-heading start -->
+              <div class="calculator-heading">
+                <h1>Loan Calculator</h1>
+              </div>
+              <!-- calculator-heading end -->
+      
+              <!-- Calling Calculate function defined in app.js -->
+
+              <!-- amount-content start -->
+               <div class="amount-content">
+                 <p>Amount (PKR) :
+                     <input id="amount" type="number" onchange="Calculate()">
+                 </p>
+               </div>
+              <!-- amount-content end -->
+      
+              <!-- interest-content start -->
+               <div class="interest-content">
+                 <p>Interest Rate :
+                     <input id="rate" type="number" onchange="Calculate()">
+                 </p>
+               </div>
+              <!-- interest-content start -->
+      
+              <!-- months-to-pay-content start -->
+               <div class="months-to-pay-content">
+                 <p>Months to Pay :
+                     <input id="months" type="number" onchange="Calculate()">
+                 </p>
+               </div>
+              <!-- months-to-pay-content end -->
+      
+              <!-- result-content start -->
+               <div class="result-content">
+                 <h2 id="total"></h2>
+               </div>
+              <!-- result-content end -->
+          </div>
+            <!-- calculator end -->
          </div>
         <!-- loan-apply-section start -->
 
@@ -376,5 +433,9 @@
          <!-- footer end -->
     </div>
     <!-- index-container end -->
+
+    <!-- app.js script -->
+    <script src="./app.js"></script>
+    <!-- app.js script -->
   </body>
 </html>
