@@ -1,0 +1,30 @@
+*{
+    font-size: 2rem;
+}
+
+.services {
+    background-color: #e9ecef;
+}
+
+.service-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    color: black;
+    font-size: 3rem;
+}
+
+.service-card p {
+    color: black;
+}
