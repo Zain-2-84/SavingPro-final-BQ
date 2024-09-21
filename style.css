@@ -46,9 +46,9 @@ a {
 .navbar {
   grid-area: navbar;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: 1fr 0.1fr repeat(5, 0.5fr);
   grid-template-areas: 
-        /* 1st row */ "navbar-company-logo navbar-company-logo . navbar-loan-apply navbar-about navbar-services navbar-contact navbar-login";
+        /* 1st row */ "navbar-company-logo . navbar-loan-apply navbar-about navbar-services navbar-contact navbar-login";
   align-items: center;
   /* background-color: #d8f3dc; */
   background-color: #f0fff1;

@@ -1,0 +1,74 @@
+.index-container-for-contact {
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(8, minmax(3rem, 1fr));
+  grid-template-rows: auto 1fr repeat(2, auto);
+  grid-template-areas:
+    /* 1st row */
+    "navbar navbar navbar navbar navbar navbar navbar navbar"
+    /* 2nd row */
+    ". . . . . . . ."
+    /* 3rd row */
+    "contact-section contact-section contact-section contact-section contact-section contact-section contact-section contact-section"
+    /* 4th row */
+    "footer footer footer footer footer footer footer footer";
+}
+
+/* contact-section start */
+.contact-section {
+  grid-area: contact-section;
+  display: grid;
+}
+
+/* Sannan's styling start */
+.child-2-paragraph-1,
+.child-2-paragraph-2,
+.child-2-paragraph-3 {
+  font-style: normal;
+  margin: 20px;
+  color: white;
+}
+
+.google-map-sample {
+  padding: 5rem;
+  display: block;
+  margin: auto;
+  height: 350px;
+  width: 700px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 400px;
+  width: 200px;
+}
+
+.child-2 {
+  padding: 0%;
+  margin: 40px;
+  margin-left: 850px;
+  display: block;
+  margin-top: -400px;
+}
+
+/* .child-2-paragraph-1{
+    font-size: small;
+    color: #012419;
+} */
+.child-1 {
+  font-size: 12px;
+  margin: 20px;
+  font-weight: 100;
+  color: #012419;
+}
+
+.child-1-button {
+  border-radius: 0px;
+  border-style: double;
+  box-sizing: border-box;
+  color: #012419;
+}
+
+/* Sannan's styling end */
+/* contact-section end */

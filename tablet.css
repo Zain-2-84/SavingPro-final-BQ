@@ -1,7 +1,7 @@
 @media (min-width: 501px) and (max-width: 768px){
     .navbar{
         font-size: 1.5rem;
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: 1fr 0.1fr repeat(5, 1fr);
         grid-template-areas: 
             /* 1st row */
             "navbar-company-logo . navbar-loan-apply navbar-about navbar-services navbar-contact navbar-login"
