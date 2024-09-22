@@ -89,7 +89,7 @@
                    <div class="loan-apply-choose-container">
                     <!-- loan-apply-heading start -->
                      <div class="loan-apply-heading">
-                      <h2>Loan apply form.</h2>
+                      <h1>Loan apply form.</h2>
                      </div>
                     <!-- loan-apply-heading end -->
                     <!-- loan-apply-calculator-link start -->
@@ -317,31 +317,30 @@
 
               <!-- amount-content start -->
                <div class="amount-content">
-                 <p>Amount (PKR) :
-                     <input id="amount" type="number" onchange="Calculate()">
-                 </p>
+                 <p class="amount-paragraph">Amount (PKR) :</p>
+                <input class="amount-input" id="amount" type="number" onchange="Calculate()">
                </div>
               <!-- amount-content end -->
       
               <!-- interest-content start -->
                <div class="interest-content">
-                 <p>Interest Rate :
-                     <input id="rate" type="number" onchange="Calculate()">
-                 </p>
+                 <p class="interest-paragraph">Interest Rate :
+                </p>
+                <input class="interest-input" id="rate" type="number" onchange="Calculate()">
                </div>
               <!-- interest-content start -->
       
               <!-- months-to-pay-content start -->
                <div class="months-to-pay-content">
-                 <p>Months to Pay :
-                     <input id="months" type="number" onchange="Calculate()">
-                 </p>
+                 <p class="month-to-pay-paragraph">Months to Pay :
+                </p>
+                <input class="month-to-pay-input" id="months" type="number" onchange="Calculate()">
                </div>
               <!-- months-to-pay-content end -->
       
               <!-- result-content start -->
                <div class="result-content">
-                 <h2 class="text-primary" id="total"></h2>
+                 <h2 class="result-paragraph text-primary" id="total"></h2>
                </div>
               <!-- result-content end -->
           </div>
