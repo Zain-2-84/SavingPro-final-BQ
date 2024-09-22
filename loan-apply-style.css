@@ -350,18 +350,38 @@
 
   .calculator-heading{
     grid-area: calculator-heading;
+    padding-bottom: 2rem;
   }
 
+  /* amount-content start */
   .amount-content{
     grid-area: amount-content;
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: 
+      /* 1st row */
+      "amount-paragraph amount-input"
+    ;
   }
+
+  .amount-paragraph{
+    grid-area: amount-paragraph;
+  }
+
+  .amount-input{
+    grid-area: amount-input;
+  }
+  /* amount-content end */
 
   .interest-content{
     grid-area: interest-content;
+    padding-bottom: 2rem;
   }
 
   .months-to-pay-content{
     grid-area: months-to-pay-content;
+    padding-bottom: 2rem;
   }
 
   .result-content{
@@ -369,6 +389,12 @@
   }
   /* calculator end */
 
+  /* loan-apply-heading and calculator start */
+  .loan-apply-heading h1, .calculator-heading h1{
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  /* loan-apply-heading and calculator end */
 
   /* loan-apply-section end */
 
@@ -543,6 +569,19 @@
     justify-content: center;
   } 
   /* all input[type="text"] and select end */
+
+  /* calculator start */
+  .calculator{
+    grid-template-columns: ;
+  }
+  /* calculator end */
+
+  /* loan-apply and calculator headings start */
+  .loan-apply-heading h1, .calculator h1{
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+  /* loan-apply and calculator headings end */
 
   }
   /* mobile query end */
