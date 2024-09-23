@@ -1,0 +1,222 @@
+.index-container-for-login {
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(8, minmax(3rem, 1fr));
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+    /* 1st row */
+    "navbar navbar navbar navbar navbar navbar navbar navbar"
+    /* 2nd row */
+    "login-section login-section login-section login-section login-section login-section login-section login-section"
+    /* 3rd row */
+    "footer footer footer footer footer footer footer footer";
+}
+
+.login-section {
+  grid-area: login-section;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  grid-template-rows: 0.1fr 1fr 0.2fr;
+  grid-template-areas: 
+        /* 1st row */ ". . ."
+        /* 2nd row */ ". login-form ."
+        /* 3rd row */ ". . .";
+  background-image: url(./images/login-form/login-bg-laptop-large.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-form {
+  grid-area: login-form;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-template-rows: repeat(4, 0.5fr) repeat(2, 1fr);
+  grid-template-areas: 
+    /* 1st row */
+    ". login-heading ."
+    /* 2nd row */
+    ". username-content ."
+    /* 3rd row */
+    ". password-content ."
+    /* 4th row */
+    ". forgot-password-paragraph ."
+    /* 5th row */
+    ". login-container ."
+    /* 6th row */
+    ". sign-up-content .";
+  gap: 2rem;
+  align-items: center;
+  background-color: white;
+  border-radius: 5rem;
+}
+
+.login-heading {
+  grid-area: login-heading;
+  justify-self: center;
+}
+
+.login-heading h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/* username-content start */
+.username-content {
+  grid-area: username-content;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: 
+        /* 1st row */
+    "username-paragraph ."
+    /* 2nd row */
+    "username-icon username-input";
+  gap: 1rem;
+}
+
+.username-icon {
+  grid-area: username-icon;
+  justify-self: flex-end;
+}
+
+.username-input {
+  grid-area: username-input;
+}
+
+.username-input input {
+  width: 100%;
+}
+/* username-content end */
+
+/* password-content start */
+.password-content {
+  grid-area: password-content;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: 
+        /* 1st row */
+    "password-paragraph ."
+    /* 2nd row */
+    "password-icon password-input";
+  gap: 1rem;
+}
+
+.password-icon {
+  grid-area: password-icon;
+  justify-self: flex-end;
+}
+
+.password-input {
+  grid-area: password-input;
+}
+
+.password-input input {
+  width: 100%;
+}
+/* password-content end */
+
+.forgot-password-paragraph {
+  grid-area: forgot-password-paragraph;
+  justify-self: flex-end;
+}
+
+/* login-container start */
+.login-container {
+  grid-area: login-container;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-areas: 
+        /* 1st row */
+    "."
+    /* 2nd row */
+    "login-button"
+    /* 3rd row */
+    ".";
+}
+
+.login-button {
+  grid-area: login-button;
+  padding: 2rem 0;
+}
+/* login-container start */
+
+/* login inputs start */
+input[type="text"], input[type="password"]{
+  max-width: 50vw;
+  min-width: 17vw;
+}
+/* login inputs end */
+
+/* sign-up-content start */
+.sign-up-content {
+  grid-area: sign-up-content;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: 
+        /* 1st row */
+    "sign-up-paragraph"
+    /* 1st row */
+    "sign-up-icons"
+    /* 2nd row */
+    "sign-up-link";
+  gap: 2rem;
+  justify-items: center;
+}
+
+.sign-up-paragraph {
+  grid-area: sign-up-paragraph;
+}
+
+.sign-up-icons {
+  grid-area: sign-up-icons;
+}
+
+.sign-up-link {
+  grid-area: sign-up-link;
+}
+
+.sign-up-link-anchor {
+  text-transform: uppercase;
+}
+/* sign-up-content end */
+
+/* tablet styling start */
+@media (min-width: 501px) and (max-width: 768px){
+
+}
+/* tablet styling start */
+
+/* mobile styling start */
+@media (min-width: 300px) and (max-width: 500px){
+  .login-form{
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: 
+      /* 1st row */
+      ""
+
+      /* 2nd row */
+      ""
+
+      /* 3rd row */
+      ""
+
+      /* 4th row */
+      ""
+
+      /* 5th row */
+      ""
+
+      /* 6th row */
+      ""
+
+      /* 7th row */
+      ""
+
+      /* 8th row */
+      ""
+    ;
+  }
+}
+/* mobile styling end */
