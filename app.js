@@ -1,3 +1,4 @@
+// calculator's brain start
 function Calculate() {
     
     // Extracting value in the amount 
@@ -21,3 +22,4 @@ function Calculate() {
     document.querySelector("#total")
         	.innerHTML = "EMI : (PKR)" + total;
     }
+// calculator's brain end
