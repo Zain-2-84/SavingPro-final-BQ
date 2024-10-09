@@ -1,150 +1,353 @@
-.index-container-for-about{
+.index-container-for-about {
     font-size: 2rem;
   display: grid;
   grid-template-columns: 0.5fr repeat(6, minmax(3rem, 1fr)) 0.5fr;
-  grid-template-rows: repeat(7, auto);
+  grid-template-rows: repeat(6, auto);
   grid-template-areas: 
     /* 1st row */
     "navbar navbar navbar navbar navbar navbar navbar navbar"
-
     /* 2nd row */
-    ". hero-section hero-section hero-section hero-section hero-section hero-section ."
-
+    "about-intro-section about-intro-section about-intro-section about-intro-section about-intro-section about-intro-section about-intro-section about-intro-section"
+    /* 2nd row */
+    "hero-section hero-section hero-section hero-section hero-section hero-section hero-section hero-section"
     /* 3rd row */
-    ". our-qualities our-qualities our-qualities our-qualities our-qualities our-qualities ."
-
+    "testimonials-section testimonials-section testimonials-section testimonials-section testimonials-section testimonials-section testimonials-section testimonials-section"
     /* 4th row */
-    ". loan-application-form loan-application-form loan-application-form loan-application-form loan-application-form loan-application-form ."
-
+    "google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section"
     /* 5th row */
-    ". google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section ."
-
+    "about-newsletter about-newsletter about-newsletter about-newsletter about-newsletter about-newsletter about-newsletter about-newsletter"
     /* 6th row */
-    ". testimonials-section testimonials-section testimonials-section testimonials-section testimonials-section testimonials-section ."
-
-    /* 7th row */
-    "footer footer footer footer footer footer footer footer"
-  ;
+    "footer footer footer footer footer footer footer footer";
 
   overflow-x: hidden;
 }
 
-/* hero-section start */
-.hero-section{
-    grid-area: hero-section;
-    display: grid;
-    grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
-    grid-template-rows: 0.1fr auto 0.1fr;
-    grid-template-areas: 
+/* font-size for all elements except navbar and footer start */
+.about-intro-section, .hero-section, .google-maps-section, .testimonials-section, .about-newsletter{
+    font-size: 2rem;
+}
+/* font-size for all elements except navbar and footer end */
+
+/* about-intro-section start */
+.about-intro-section {
+  grid-area: about-intro-section;
+  display: grid;
+  grid-template-columns: 0.2fr repeat(2, 1fr) 0.2fr;
+  grid-template-rows: 0.5fr repeat(2, 1fr) 0.5fr;
+  grid-template-areas: 
         /* 1st row */
-        ". . . ."
+    ". . . ."
+    /* 2nd row */
+    ". about-heading about-heading ."
+    /* 3rd row */
+    ". about-paragraph-1 about-paragraph-2 ."
+    /* 4th row */
+    ". . . .";
+  gap: 3rem;
+}
 
-        /* 2nd row */
-        ". hero-image-container hero-content ."
+.about-heading {
+  grid-area: about-heading;
+  margin-bottom: 2rem;
+}
 
-        /* 3rd rows */
-        ". . . ."
-    ;
-    background-color: #e4f1ed;
-    gap: 2rem;
+.about-paragraph-1 {
+  grid-area: about-paragraph-1;
+}
+
+.about-paragraph-2 {
+  grid-area: about-paragraph-2;
+}
+/* about-intro-section end */
+
+/* hero-section start */
+.hero-section {
+  grid-area: hero-section;
+  display: grid;
+  grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
+  grid-template-rows: 0.1fr auto 0.1fr;
+  grid-template-areas: 
+        /* 1st row */
+    ". . . ."
+    /* 2nd row */
+    ". hero-image-container hero-content ."
+    /* 3rd rows */
+    ". . . .";
+  background-color: #e4f1ed;
+  gap: 2rem;
 }
 
 /* hero-image-container start */
-.hero-image-container{
-    grid-area: hero-image-container;
-    display: grid;
-    grid-template-rows: 0.5fr repeat(5, auto) 0.5fr;
-    grid-template-columns: repeat(5, 1fr) 0.1fr;
+.hero-image-container {
+  grid-area: hero-image-container;
+  display: grid;
+  grid-template-rows: 0.5fr repeat(5, auto) 0.5fr;
+  grid-template-columns: repeat(5, 1fr) 0.1fr;
 }
 
-.hero-image{
-    grid-area: hero-image;
-    grid-column: 1 / 5;
-    grid-row: 2 / 6;
+.hero-image {
+  grid-area: hero-image;
+  grid-column: 1 / 5;
+  grid-row: 2 / 6;
 }
 
-.hero-image-element{
-    width: 100%;
+.hero-image-element {
+  width: 100%;
 }
 
-.hero-percentage{
-    grid-area: hero-percentage;
-    background-color: #10c98f;
-    color: white;
-    border: 0.5rem solid #10c98f;
-    z-index: 1;
-    align-self: center;
-    text-align: center;
-    grid-column: 3 / 6;
-    grid-row: 5 / 7;
+.hero-percentage {
+  grid-area: hero-percentage;
+  background-color: #10c98f;
+  color: white;
+  border: 0.5rem solid #10c98f;
+  z-index: 1;
+  align-self: center;
+  text-align: center;
+  grid-column: 3 / 6;
+  grid-row: 5 / 7;
 }
 /* hero-image-container end */
 
 /* hero-content start */
-.hero-content{
-    grid-area: hero-content;
-    display: grid;
-  grid-template-rows: 0.5fr repeat(4, auto) 0.5fr;
+.hero-content {
+  grid-area: hero-content;
+  display: grid;
+  grid-template-rows: 0.1fr repeat(4, auto);
   grid-template-columns: repeat(1, 1fr);
   grid-template-areas: 
   /* 1st row */
-  "."
+    "."
+    /* 2nd row */
+    "hero-heading"
+    /* 3rd row */
+    "hero-paragraph"
+    /* 4th row */
+    "hero-bullet-points"
+    /* 5th row */
+    "hero-learn-more";
 
-  /* 2nd row */
-  "hero-heading"
-
-  /* 3rd row */
-  "hero-paragraph"
-
-  /* 4th row */
-  "hero-bullet-points"
-
-  /* 5th row */
-  "hero-learn-more"
-
-  /* 6th row */
-  "."
-  ;
-  
   gap: 1rem;
   align-items: center;
 }
 
-.hero-heading{
-    grid-area: hero-heading;
+.hero-heading {
+  grid-area: hero-heading;
 }
 
-.hero-paragraph{
-    grid-area: hero-paragraph;
+.hero-paragraph {
+  grid-area: hero-paragraph;
 }
 
-.hero-bullet-points{
-    grid-area: hero-bullet-points;
+.hero-bullet-points {
+  grid-area: hero-bullet-points;
 }
 
-.hero-bullet-points ul li{
-    display: block;
+.hero-bullet-points ul li {
+  display: block;
 }
-.hero-learn-more{
-    grid-area: hero-learn-more;
-    align-self: center;
+
+/* hero-learn-more start */
+.hero-learn-more {
+  grid-area: hero-learn-more;
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: 
+        /* 1st row */ ". hero-learn-more-button hero-learn-more-button hero-learn-more-button .";
 }
+
+.hero-learn-more-button {
+  grid-area: hero-learn-more-button;
+  padding: 2rem 5rem;
+}
+/* hero-learn-more end */
+
 /* hero-content end */
 
 /* hero-section end */
 
-.our-qualities{
-    grid-area: our-qualities;
+/* about-newsletter start */
+.about-newsletter {
+  grid-area: about-newsletter;
+  display: grid;
+  grid-template-rows: 0.2fr repeat(2, 0.5fr) 0.2fr;
+  grid-template-columns: 0.2fr auto 0.2fr;
+  grid-template-areas: 
+        /* 1st row */
+    ". . ."
+    /* 2nd row */
+    ". about-newsletter-heading ."
+    /* 3rd row */
+    ". about-newsletter-form ."
+    /* 4th row */
+    ". . .";
 }
 
-.loan-application-form{
-    grid-area: loan-application-form;
+.about-newsletter-heading {
+  grid-area: about-newsletter-heading;
+  justify-self: center;
 }
 
-.google-maps-section{
-    grid-area: google-maps-section;
+/* about-newsletter-form start */
+.about-newsletter-form {
+  grid-area: about-newsletter-form;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 0.2fr 0.5fr 1fr 0.2fr;
+  grid-template-areas: 
+        /* 1st row */
+    ".about-newsletter-label-name about-newsletter-input-name ."
+    /* 2nd row */
+    ".about-newsletter-label-email about-newsletter-input-email ."
+    /* 3rd row */
+    ". about-newsletter-button about-newsletter-button .";
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.testimonials-section{
-    grid-area: testimonials-section;
+.about-newsletter-label-name {
+  grid-area: about-newsletter-label-name;
+  justify-self: center;
+}
+
+.about-newsletter-input-name {
+  grid-area: about-newsletter-input-name;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.about-newsletter-label-email {
+  grid-area: about-newsletter-label-email;
+  justify-self: center;
+}
+
+.about-newsletter-input-email {
+  grid-area: about-newsletter-input-email;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+/* in case if input class selector doesn't work start */
+.about-newsletter-label-name,
+.about-newsletter-input-name,
+.about-newsletter-label-email,
+.about-newsletter-input-email {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  max-width: 50vw;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  max-width: 50vw;
+}
+/* in case if input class selector doesn't work end */
+
+.about-newsletter-button {
+  grid-area: about-newsletter-button;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+/* about-newsletter-form end */
+
+/* about-newsletter end */
+
+.google-maps-section {
+  grid-area: google-maps-section;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-template-areas: 
+        /* 1st row */ ". google-maps-element .";
+}
+
+.google-maps-element {
+  grid-area: google-maps-element;
+  display: grid;
+  grid-template-rows: 0.2fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+        /* 1st row */
+    ". google-map-heading ."
+    /* 2nd row */
+    "google-map-iframe google-map-iframe google-map-iframe";
+}
+
+.google-map-heading {
+  grid-area: google-map-heading;
+}
+
+.google-map-iframe {
+  grid-area: google-map-iframe;
+}
+
+.testimonials-section {
+  grid-area: testimonials-section;
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  /* hero-section start */
+  .about-intro-section, .hero-section, .google-maps-section, .testimonials-section, .about-newsletter {
+    font-size: 1.6rem;
+  }
+
+  .hero-section {
+    grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
+    grid-template-rows: 0.1fr repeat(2, 1fr) 0.1fr;
+    grid-template-areas: 
+            /* 1st row */
+      ". . . ."
+      /* 2nd row */
+      ". hero-image-container hero-image-container ."
+      /* 3rd row */
+      ". hero-content hero-content ."
+      /* 4th row */
+      ". . . .";
+    gap: 1rem;
+  }
+
+  .hero-image-container {
+    grid-template-rows: 0.1fr repeat(5, auto);
+  }
+
+  .hero-bullet-points {
+    justify-self: center;
+  }
+  /* hero-section end */
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .about-intro-section, .hero-section, .google-maps-section, .testimonials-section, .about-newsletter {
+    font-size: 1.5rem;
+  }
+
+  .hero-section {
+    grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
+    grid-template-rows: 0.1fr repeat(2, 1fr) 0.1fr;
+    grid-template-areas: 
+            /* 1st row */
+      ". . . ."
+      /* 2nd row */
+      ". hero-image-container hero-image-container ."
+      /* 3rd row */
+      ". hero-content hero-content ."
+      /* 4th row */
+      ". . . .";
+    gap: 1rem;
+  }
+
+  .hero-image-container {
+    grid-template-rows: 0.1fr repeat(5, auto);
+  }
+
+  .hero-bullet-points {
+    justify-self: center;
+  }
+
+  .about-newsletter {
+    justify-self: center;
+  }
 }
