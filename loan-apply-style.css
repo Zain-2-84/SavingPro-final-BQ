@@ -139,6 +139,10 @@
     padding: 1rem 2rem;
     border-radius: 2rem;
   }
+
+  .loan-apply-calculator-link-button:hover{
+    background-color: #588157;
+  }
   /* loan-apply-choose container end */
 
 
@@ -491,9 +495,9 @@
 
   /* mobile query start */
   @media (min-width: 300px) and (max-width: 500px){
-    .navbar a{
-      font-size: 1.5rem;
-    }
+    /* .navbar a{
+      font-size: 1rem;
+    } */
 
     .loan-apply-section{
       overflow-x: hidden;
