@@ -2,7 +2,7 @@
     font-size: 2rem;
   display: grid;
   grid-template-columns: 0.5fr repeat(6, minmax(3rem, 1fr)) 0.5fr;
-  grid-template-rows: repeat(6, auto);
+  grid-template-rows: repeat(5, auto);
   grid-template-areas: 
     /* 1st row */
     "navbar navbar navbar navbar navbar navbar navbar navbar"
@@ -11,12 +11,10 @@
     /* 2nd row */
     "hero-section hero-section hero-section hero-section hero-section hero-section hero-section hero-section"
     /* 3rd row */
-    "testimonials-section testimonials-section testimonials-section testimonials-section testimonials-section testimonials-section testimonials-section testimonials-section"
-    /* 4th row */
     "google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section"
-    /* 5th row */
+    /* 4th row */
     "about-newsletter about-newsletter about-newsletter about-newsletter about-newsletter about-newsletter about-newsletter about-newsletter"
-    /* 6th row */
+    /* 5th row */
     "footer footer footer footer footer footer footer footer";
 
   overflow-x: hidden;
@@ -282,10 +280,6 @@ input[type="email"] {
 
 .google-map-iframe {
   grid-area: google-map-iframe;
-}
-
-.testimonials-section {
-  grid-area: testimonials-section;
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
