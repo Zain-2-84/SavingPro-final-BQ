@@ -1,248 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SavingPro Finance - Services</title>
 
-    <!-- bootstrap cdn -->
-    <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SavingPro Finance - Services</title>
 
-    <!-- style.css -->
-    <link rel="stylesheet" href="./style.css" />
+  <!-- bootstrap cdn -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- laptop.css -->
-    <link rel="stylesheet" href="./laptop.css" />
+  <!-- tailwind CSS cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-    <!-- tablet.css -->
-    <link rel="stylesheet" href="./tablet.css" />
+  <!-- style.css -->
+  <link rel="stylesheet" href="./style.css" />
 
-    <!-- mobile.css -->
-    <link rel="stylesheet" href="./mobile.css" />
+  <!-- laptop.css -->
+  <link rel="stylesheet" href="./laptop.css" />
 
-    <!-- loan-apply-style.css -->
-    <link rel="stylesheet" href="./loan-apply-style.css" />
+  <!-- tablet.css -->
+  <link rel="stylesheet" href="./tablet.css" />
 
-    <!-- contact-style.css -->
-    <link rel="stylesheet" href="./contact-style.css" />
+  <!-- mobile.css -->
+  <link rel="stylesheet" href="./mobile.css" />
 
-    <!-- services-style.css -->
-    <link rel="stylesheet" href="./services-style.css" />
+  <!-- loan-apply-style.css -->
+  <link rel="stylesheet" href="./loan-apply-style.css" />
 
-    <!-- font awesome cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <!-- contact-style.css -->
+  <link rel="stylesheet" href="./contact-style.css" />
 
-    <!-- Google fonts cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- navbar start -->
-    <div class="navbar">
-      <!-- navbar company name start -->
-      <div class="navbar-company-logo">
-        <a href="./index.html">
-          <img
-            src="./images/SavingPro-green-bg-removed.png"
-            style="width: 100%; min-width: 10rem; max-width: 11rem"
-            alt="Company logo"
-          />
-        </a>
-      </div>
-      <!-- navbar company name end -->
+  <!-- services-style.css -->
+  <link rel="stylesheet" href="./services-style.css" />
 
-      <!-- navbar-loan-apply start -->
-      <div class="navbar-loan-apply">
-        <a href="./loan-apply.html">Loan apply</a>
-      </div>
-      <!-- navbar-loan-apply end -->
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-      <!-- navbar About start -->
-      <div class="navbar-about">
-        <a href="./about.html">About</a>
-      </div>
-      <!-- navbar About end -->
+  <!-- Google fonts cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet" />
+</head>
 
-      <!-- navbar Services start -->
-      <div class="navbar-services">
-        <a class="active" href="./services.html">Services</a>
-      </div>
-      <!-- navbar Services end -->
-
-      <!-- navbar Contact start -->
-      <div class="navbar-contact">
-        <a href="./contact.html">Contact</a>
-      </div>
-      <!-- navbar Contact end -->
-
-      <!-- navbar Login start -->
-      <div class="navbar-login">
-        <a href="./login.html">Login</a>
-      </div>
-      <!-- navbar Login end -->
+<body>
+  <!-- navbar start -->
+  <div class="navbar">
+    <!-- navbar company name start -->
+    <div class="navbar-company-logo">
+      <a href="./index.html">
+        <img src="./images/SavingPro-green-bg-removed.png" style="width: 100%; min-width: 10rem; max-width: 11rem"
+          alt="Company logo" />
+      </a>
     </div>
-    <!-- navbar end -->
+    <!-- navbar company name end -->
 
-    <!-- Zeeshan's work start -->
-    <main>
-      <section class="services py-5">
-        <div class="container">
-          <h1 class="text-center mb-4">Our Services</h1>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="service-card">
-                <h3>Service 1</h3>
-                <p>
-                  Flexible Repayment Options: We offer repayment options
-                  tailored to your needs. Low Interest Rates: Our interest rates
-                  are among the lowest in the market. Quick Approval: Your loan
-                  gets approved quickly so you can meet your needs promptly.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="service-card">
-                <h3>Service 2</h3>
-                <p>
-                  Customized Loan Plans: Every business has unique needs, so we
-                  provide customized loan plans. Fast Processing: Our fast
-                  processing helps your business grow quickly. Expert Guidance:
-                  Our experts guide you at every step.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="service-card">
-                <h3>Service 3</h3>
-                <p>
-                  Affordable EMIs: We offer affordable EMIs to help you buy your
-                  dream home easily. Transparent Process: Our process is
-                  completely transparent with no hidden charges. Dedicated
-                  Support: Our support team is always ready to assist you.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- Zeeshan's work end -->
-
-    <!-- footer start -->
-    <div class="footer">
-      <!-- company-content start -->
-      <div class="company-content">
-        <div class="company-logo">
-          <img
-            src="./images/SavingPro-green-bg-removed.png"
-            style="width: 100%"
-            alt="Company logo"
-          />
-        </div>
-
-        <div class="company-heading">
-          <h2>SavingPro</h2>
-        </div>
-
-        <div class="company-paragraph">
-          <p>
-            This is a finance and investment resource. Like Pakistan Stock
-            Exchange, but smaller. It is where we provide educational content on
-            personal finance, budgeting, and investing. Offers tools like
-            calculators, budgeting spreadsheets, and monetize through affiliate
-            links, ads, and online courses.
-          </p>
-        </div>
-      </div>
-      <!-- company-content end -->
-
-      <!-- quick-links start -->
-      <div class="quick-links">
-        <div class="quick-links-heading">
-          <h2>Quick Links.</h2>
-        </div>
-
-        <div class="quick-links-work">Work</div>
-
-        <div class="quick-links-services">Services</div>
-
-        <div class="quick-links-products">
-          <p>Products</p>
-        </div>
-      </div>
-      <!-- quick-links end -->
-
-      <!-- newsLetter start -->
-      <div class="newsLetter">
-        <div class="newsLetter-heading">
-          <h2>Newsletter</h2>
-        </div>
-
-        <div class="newsLetter-paragraph">
-          <p>Subcribe to newsletter to get updates.</p>
-        </div>
-
-        <div class="newsLetter-input-container">
-          <div class="newsLetter-input">
-            <input
-              type="email"
-              placeholder="Enter your Email."
-              style="padding: 2rem 4rem"
-            />
-          </div>
-
-          <div class="newsLetter-button">
-            <button type="submit" class="newsLetter-button-btn">
-              <i class="fa-solid fa-square-caret-right fa-5x"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="newsLetter-social-media-links">
-          <div class="social-media-1">
-            <i class="fa-brands fa-facebook fa-2x"></i>
-          </div>
-          <div class="social-media-2">
-            <i class="fa-brands fa-instagram fa-2x"></i>
-          </div>
-          <div class="social-media-3">
-            <i class="fa-brands fa-linkedin-in fa-2x"></i>
-          </div>
-          <div class="social-media-4">
-            <i class="fa-brands fa-youtube fa-2x"></i>
-          </div>
-        </div>
-      </div>
-      <!-- newsLetter end -->
-
-      <!-- copyrights start -->
-      <div class="copyrights">
-        <div class="copyrights-paragraph">
-          <p>
-            Copyrights &copy; 2024 All rights reserved | This is made by Bano
-            Qabil 3.0.
-          </p>
-        </div>
-      </div>
-      <!-- copyrights end -->
+    <!-- navbar-loan-apply start -->
+    <div class="navbar-loan-apply">
+      <a href="./loan-apply.html">Loan apply</a>
     </div>
-    <!-- footer end -->
+    <!-- navbar-loan-apply end -->
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+    <!-- navbar About start -->
+    <div class="navbar-about">
+      <a href="./about.html">About</a>
+    </div>
+    <!-- navbar About end -->
+
+    <!-- navbar Services start -->
+    <div class="navbar-services">
+      <a class="active" href="./services.html">Services</a>
+    </div>
+    <!-- navbar Services end -->
+
+    <!-- navbar Contact start -->
+    <div class="navbar-contact">
+      <a href="./contact.html">Contact</a>
+    </div>
+    <!-- navbar Contact end -->
+
+    <!-- navbar Login start -->
+    <div class="navbar-login">
+      <a href="./login.html">Login</a>
+    </div>
+    <!-- navbar Login end -->
+  </div>
+  <!-- navbar end -->
+
+  <!-- add zeeshan's work here. -->
+
+  <!-- Zeeshan's Tailwind css work start -->
+  <main class="flex flex-col min-h-screen flex-grow">
+    <section class="bg-teal-500 text-white py-20">
+      <div class="container mx-auto text-center">
+        <h1 class="text-6xl font-bold mb-4">Services</h1>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="container mx-auto text-center px-4">
+        <h2 class="text-4xl font-bold text-teal-800 mb-4">Solutions for every business need.</h2>
+        <p class="text-gray-600 mb-12 max-w-2xl mx-auto">
+          The brochure must grab a viewer's attention and hold it long enough to deliver the pertinent information.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="service-card">
+            <div class="icon home-icon"></div>
+            <h3 class="text-teal-500 font-bold mb-2">Home Loan</h3>
+            <h4 class="text-xl font-semibold mb-2">What are my options and the cost to exercise?</h4>
+            <p class="text-gray-600">Tools such as a profit and tax calculator show the value of your stock options and
+              exercise cost.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon car-icon"></div>
+            <h3 class="text-teal-500 font-bold mb-2">Car Loan</h3>
+            <h4 class="text-xl font-semibold mb-2">Should I exercise now or later? How can I afford it?</h4>
+            <p class="text-gray-600">Tools such as a profit and tax calculator show the value of your stock options and
+              exercise cost.</p>
+          </div>
+          <div class="service-card">
+            <div class="icon business-icon"></div>
+            <h3 class="text-teal-500 font-bold mb-2">Business Loan</h3>
+            <h4 class="text-xl font-semibold mb-2">I own my shares - can I get liquidity now without selling?</h4>
+            <p class="text-gray-600">Tools such as a profit and tax calculator show the value of your stock options and
+              exercise cost.</p>
+            <button class="apply-btn">Apply For Loan</button>
+            </nav>
+            </header>
+          </main>
+          
+          <main>
+            <section class="hero">
+              <div class="hero-content">
+                <h1>Get loan in 3 easy steps</h1>
+                <p>Tools such as a profit simulator and tax calculator show the value of your stock options and
+                  exercise cost. The brochure must grab a viewer's attention and hold it long enough to deliver the
+                  pertinent information.</p>
+                <ul>
+                  <li>Monthly recurring revenue</li>
+                  <li>Customer acquisition cost</li>
+                  <li>Number of customers</li>
+                </ul>
+                <button class="learn-more-btn">LEARN MORE</button>
+              </div>
+              <div class="hero-image">
+                <img src="person-working.jpg" alt="Person working at desk">
+              </div>
+            </section>
+
+            <section class="testimonial">
+              <blockquote>
+                "I had 15+ folks reach out to me on Savingpro. I was completely blown away by how easy it's been to
+                reach these prospective buyers. We weren't necessarily looking to sell but EasyLo has been A+. From
+                start to finish, we were acquired within 30-days at full asking price."
+              </blockquote>
+              <div class="testimonial-author">
+                <img src="ash-wednesday.jpg" alt="Ash Wednesday">
+                <div>
+                  <h3>Ash Wednesday</h3>
+                  <p>Designer at Zeeshan</p>
+                </div>
+              </div>
+              <div class="testimonial-nav">
+                <span>1</span>
+                <span>2</span>
+              </div>
+            </section>
+          </main>
+          <!-- Zeeshan's Tailwind css work end -->
+
+            <!-- Zeeshan's work start -->
+            <main>
+              <section class="services py-5">
+                <div class="container">
+                  <h1 class="text-center mb-4">Our Services</h1>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="service-card">
+                        <h3>Service 1</h3>
+                        <p>
+                          Flexible Repayment Options: We offer repayment options
+                          tailored to your needs. Low Interest Rates: Our interest rates
+                          are among the lowest in the market. Quick Approval: Your loan
+                          gets approved quickly so you can meet your needs promptly.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="service-card">
+                        <h3>Service 2</h3>
+                        <p>
+                          Customized Loan Plans: Every business has unique needs, so we
+                          provide customized loan plans. Fast Processing: Our fast
+                          processing helps your business grow quickly. Expert Guidance:
+                          Our experts guide you at every step.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="service-card">
+                        <h3>Service 3</h3>
+                        <p>
+                          Affordable EMIs: We offer affordable EMIs to help you buy your
+                          dream home easily. Transparent Process: Our process is
+                          completely transparent with no hidden charges. Dedicated
+                          Support: Our support team is always ready to assist you.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </main>
+            <!-- Zeeshan's work end -->
+
+            <!-- footer start -->
+            <footer>
+              <div class="footer">
+                <!-- company-content start -->
+                <div class="company-content">
+                  <div class="company-logo">
+                    <img src="./images/SavingPro-green-bg-removed.png" style="width: 100%" alt="Company logo" />
+                  </div>
+
+                  <div class="company-heading">
+                    <h2>SavingPro</h2>
+                  </div>
+
+                  <div class="company-paragraph">
+                    <p>
+                      This is a finance and investment resource. Like Pakistan Stock
+                      Exchange, but smaller. It is where we provide educational content on
+                      personal finance, budgeting, and investing. Offers tools like
+                      calculators, budgeting spreadsheets, and monetize through affiliate
+                      links, ads, and online courses.
+                    </p>
+                  </div>
+                </div>
+                <!-- company-content end -->
+
+                <!-- quick-links start -->
+                <div class="quick-links">
+                  <div class="quick-links-heading">
+                    <h2>Quick Links.</h2>
+                  </div>
+
+                  <div class="quick-links-work">Work</div>
+
+                  <div class="quick-links-services">Services</div>
+
+                  <div class="quick-links-products">
+                    <p>Products</p>
+                  </div>
+                </div>
+                <!-- quick-links end -->
+
+                <!-- newsLetter start -->
+                <div class="newsLetter">
+                  <div class="newsLetter-heading">
+                    <h2>Newsletter</h2>
+                  </div>
+
+                  <div class="newsLetter-paragraph">
+                    <p>Subcribe to newsletter to get updates.</p>
+                  </div>
+
+                  <div class="newsLetter-input-container">
+                    <div class="newsLetter-input">
+                      <input type="email" placeholder="Enter your Email." style="padding: 2rem 4rem" />
+                    </div>
+
+                    <div class="newsLetter-button">
+                      <button type="submit" class="newsLetter-button-btn">
+                        <i class="fa-solid fa-square-caret-right fa-5x"></i>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="newsLetter-social-media-links">
+                    <div class="social-media-1">
+                      <i class="fa-brands fa-facebook fa-2x"></i>
+                    </div>
+                    <div class="social-media-2">
+                      <i class="fa-brands fa-instagram fa-2x"></i>
+                    </div>
+                    <div class="social-media-3">
+                      <i class="fa-brands fa-linkedin-in fa-2x"></i>
+                    </div>
+                    <div class="social-media-4">
+                      <i class="fa-brands fa-youtube fa-2x"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- newsLetter end -->
+
+                <!-- copyrights start -->
+                <div class="copyrights">
+                  <div class="copyrights-paragraph">
+                    <p>
+                      Copyrights &copy; 2024 All rights reserved | This is made by Bano
+                      Qabil 3.0.
+                    </p>
+                  </div>
+                </div>
+                <!-- copyrights end -->
+              </div>
+            </footer>
+            <!-- footer end -->
+
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>
