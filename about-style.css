@@ -9,7 +9,7 @@
     /* 2nd row */
     "about-intro-section about-intro-section about-intro-section about-intro-section about-intro-section about-intro-section about-intro-section about-intro-section"
     /* 2nd row */
-    "hero-section hero-section hero-section hero-section hero-section hero-section hero-section hero-section"
+    "about-hero-section about-hero-section about-hero-section about-hero-section about-hero-section about-hero-section about-hero-section about-hero-section"
     /* 3rd row */
     "google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section google-maps-section"
     /* 4th row */
@@ -21,7 +21,7 @@
 }
 
 /* font-size for all elements except navbar and footer start */
-.about-intro-section, .hero-section, .google-maps-section, .testimonials-section, .about-newsletter{
+.about-intro-section, .about-hero-section, .google-maps-section, .testimonials-section, .about-newsletter{
     font-size: 2rem;
 }
 /* font-size for all elements except navbar and footer end */
@@ -58,9 +58,9 @@
 }
 /* about-intro-section end */
 
-/* hero-section start */
-.hero-section {
-  grid-area: hero-section;
+/* about-hero-section start */
+.about-hero-section {
+  grid-area: about-hero-section;
   display: grid;
   grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
   grid-template-rows: 0.1fr auto 0.1fr;
@@ -68,33 +68,33 @@
         /* 1st row */
     ". . . ."
     /* 2nd row */
-    ". hero-image-container hero-content ."
+    ". about-hero-image-container about-hero-content ."
     /* 3rd rows */
     ". . . .";
   background-color: #e4f1ed;
   gap: 2rem;
 }
 
-/* hero-image-container start */
-.hero-image-container {
-  grid-area: hero-image-container;
+/* about-hero-image-container start */
+.about-hero-image-container {
+  grid-area: about-hero-image-container;
   display: grid;
   grid-template-rows: 0.5fr repeat(5, auto) 0.5fr;
   grid-template-columns: repeat(5, 1fr) 0.1fr;
 }
 
-.hero-image {
-  grid-area: hero-image;
+.about-hero-image {
+  grid-area: about-hero-image;
   grid-column: 1 / 5;
   grid-row: 2 / 6;
 }
 
-.hero-image-element {
+.about-hero-image-element {
   width: 100%;
 }
 
-.hero-percentage {
-  grid-area: hero-percentage;
+.about-hero-percentage {
+  grid-area: about-hero-percentage;
   background-color: #10c98f;
   color: white;
   border: 0.5rem solid #10c98f;
@@ -104,11 +104,11 @@
   grid-column: 3 / 6;
   grid-row: 5 / 7;
 }
-/* hero-image-container end */
+/* about-hero-image-container end */
 
-/* hero-content start */
-.hero-content {
-  grid-area: hero-content;
+/* about-hero-content start */
+.about-hero-content {
+  grid-area: about-hero-content;
   display: grid;
   grid-template-rows: 0.1fr repeat(4, auto);
   grid-template-columns: repeat(1, 1fr);
@@ -116,53 +116,53 @@
   /* 1st row */
     "."
     /* 2nd row */
-    "hero-heading"
+    "about-hero-heading"
     /* 3rd row */
-    "hero-paragraph"
+    "about-hero-paragraph"
     /* 4th row */
-    "hero-bullet-points"
+    "about-hero-bullet-points"
     /* 5th row */
-    "hero-learn-more";
+    "about-hero-learn-more";
 
   gap: 1rem;
   align-items: center;
 }
 
-.hero-heading {
-  grid-area: hero-heading;
+.about-hero-heading {
+  grid-area: about-hero-heading;
 }
 
-.hero-paragraph {
-  grid-area: hero-paragraph;
+.about-hero-paragraph {
+  grid-area: about-hero-paragraph;
 }
 
-.hero-bullet-points {
-  grid-area: hero-bullet-points;
+.about-hero-bullet-points {
+  grid-area: about-hero-bullet-points;
 }
 
-.hero-bullet-points ul li {
+.about-hero-bullet-points ul li {
   display: block;
 }
 
-/* hero-learn-more start */
-.hero-learn-more {
-  grid-area: hero-learn-more;
+/* about-hero-learn-more start */
+.about-hero-learn-more {
+  grid-area: about-hero-learn-more;
   align-self: center;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-areas: 
-        /* 1st row */ ". hero-learn-more-button hero-learn-more-button hero-learn-more-button .";
+        /* 1st row */ ". about-hero-learn-more-button about-hero-learn-more-button about-hero-learn-more-button .";
 }
 
-.hero-learn-more-button {
-  grid-area: hero-learn-more-button;
+.about-hero-learn-more-button {
+  grid-area: about-hero-learn-more-button;
   padding: 2rem 5rem;
 }
-/* hero-learn-more end */
+/* about-hero-learn-more end */
 
-/* hero-content end */
+/* about-hero-content end */
 
-/* hero-section end */
+/* about-hero-section end */
 
 /* about-newsletter start */
 .about-newsletter {
@@ -283,61 +283,61 @@ input[type="email"] {
 }
 
 @media (min-width: 501px) and (max-width: 768px) {
-  /* hero-section start */
-  .about-intro-section, .hero-section, .google-maps-section, .testimonials-section, .about-newsletter {
+  /* about-hero-section start */
+  .about-intro-section, .about-hero-section, .google-maps-section, .testimonials-section, .about-newsletter {
     font-size: 1.6rem;
   }
 
-  .hero-section {
+  .about-hero-section {
     grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
     grid-template-rows: 0.1fr repeat(2, 1fr) 0.1fr;
     grid-template-areas: 
             /* 1st row */
       ". . . ."
       /* 2nd row */
-      ". hero-image-container hero-image-container ."
+      ". about-hero-image-container about-hero-image-container ."
       /* 3rd row */
-      ". hero-content hero-content ."
+      ". about-hero-content about-hero-content ."
       /* 4th row */
       ". . . .";
     gap: 1rem;
   }
 
-  .hero-image-container {
+  .about-hero-image-container {
     grid-template-rows: 0.1fr repeat(5, auto);
   }
 
-  .hero-bullet-points {
+  .about-hero-bullet-points {
     justify-self: center;
   }
-  /* hero-section end */
+  /* about-hero-section end */
 }
 
 @media (min-width: 300px) and (max-width: 500px) {
-  .about-intro-section, .hero-section, .google-maps-section, .testimonials-section, .about-newsletter {
+  .about-intro-section, .about-hero-section, .google-maps-section, .testimonials-section, .about-newsletter {
     font-size: 1.5rem;
   }
 
-  .hero-section {
+  .about-hero-section {
     grid-template-columns: 0.1fr repeat(2, 1fr) 0.1fr;
     grid-template-rows: 0.1fr repeat(2, 1fr) 0.1fr;
     grid-template-areas: 
             /* 1st row */
       ". . . ."
       /* 2nd row */
-      ". hero-image-container hero-image-container ."
+      ". about-hero-image-container about-hero-image-container ."
       /* 3rd row */
-      ". hero-content hero-content ."
+      ". about-hero-content about-hero-content ."
       /* 4th row */
       ". . . .";
     gap: 1rem;
   }
 
-  .hero-image-container {
+  .about-hero-image-container {
     grid-template-rows: 0.1fr repeat(5, auto);
   }
 
-  .hero-bullet-points {
+  .about-hero-bullet-points {
     justify-self: center;
   }
 
